@@ -4,14 +4,13 @@ import Header from './components/Header'
 function App() {
 
   return (
-    <>
-    <Header/>
-    <section></section>
-    <section></section>
-    <section></section>
+    <div className="app_wrap">
+      <Header />
+      <section></section>
+      <section></section>
+      <section></section>
 
-
-    </>
+    </div>
   )
 }
 
