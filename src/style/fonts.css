@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "MonaSans_B";
+  src: url("../assets/fonts/MonaSans-Bold.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MonaSans_L";
+  src: url("../assets/fonts/MonaSans-Light.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+
+}
+
+@font-face {
+  font-family: "MonaSans_M";
+  src: url("../assets/fonts/MonaSans-Medium.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+
+}
+@font-face {
+  font-family: "MonaSans_SB";
+  src: url("../assets/fonts/MonaSans-SemiBold.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+
+}
