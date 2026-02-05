@@ -1,21 +1,23 @@
-import '../style/header.css'
+import "../style/header.css";
 
 const Header = () => {
-  return <div className="header">
-    <div className="headerWrap">
-      <div className="headerLeft">
-        윤수진 포트폴리오
-      </div>
-      <div className="headerRight">
-        <ul>
-          <li>Home</li>
-          <li>About me</li>
-          <li>Portfolio</li>
-          <li>Contact</li>
-        </ul>
+  return (
+    <div className="header">
+      <div className="headerWrap">
+        <div className="headerLeft">
+          <p>2026</p>
+          <p>YOONSUJIN PORTFOLIO</p>
+        </div>
+        <div className="headerRight">
+          <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>PROJECT</li>
+            <li>CONTECT</li>
+          </ul>
+        </div>
       </div>
     </div>
-
-  </div>
-}
+  );
+};
 export default Header;

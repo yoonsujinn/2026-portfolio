@@ -1,13 +1,43 @@
 .header {
+  position: fixed;
+  top: 0px;
   width: 100%;
-  color: #8a919f;
-  font-size: 30px;
+  height: 80px;
+  color: #a77b73;
+  z-index: 5;
+  font-family: "MonaSans_L";
 }
 
 .headerWrap {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    align-items: center;
-  font-family: "MonaSans_R";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1500px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.headerLeft {
+  line-height: 1.1;
+}
+.headerLeft p:nth-child(1) {
+  font-size: 17px;
+}
+.headerLeft p:nth-child(2) {
+  font-size: 24px;
+}
+
+.headerRight {
+  font-size: 20px;
+}
+
+.headerRight ul {
+  display: flex;
+  gap: 30px;
+  height: 100%;
+}
+
+.headerRight li {
+  height: 100%;
+  text-align: center;
 }

@@ -1,7 +1,5 @@
 /* 영어 글씨체 */
 
-
-
 @font-face {
   font-family: "MonaSans_B";
   src: url("../assets/fonts/MonaSans-Bold.woff") format("woff");
@@ -12,27 +10,23 @@
   font-family: "MonaSans_L";
   src: url("../assets/fonts/MonaSans-Light.woff") format("woff");
   font-display: swap;
-
 }
 
 @font-face {
   font-family: "MonaSans_R";
   src: url("../assets/fonts/MonaSans-Regular.woff") format("woff");
   font-display: swap;
-
 }
 
 @font-face {
   font-family: "MonaSans_M";
   src: url("../assets/fonts/MonaSans-Medium.woff") format("woff");
   font-display: swap;
-
 }
 @font-face {
   font-family: "MonaSans_SB";
   src: url("../assets/fonts/MonaSans-SemiBold.woff") format("woff");
   font-display: swap;
-
 }
 
 /* 한글 글씨체 */

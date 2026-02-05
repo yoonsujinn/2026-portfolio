@@ -1,0 +1,115 @@
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  outline: 1px solid #000;
+}
+section > [class$="Wrap"] {
+  width: 1500px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 80px 0 0 0;
+  box-sizing: border-box;
+}
+
+/* ----------home------------ */
+section.home {
+  background: linear-gradient(to top, #fff 26%, #e2d1ce 100%);
+}
+.homeWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 90px 0 0 0;
+}
+.homeWrap > p {
+  font-size: 20px;
+  font-family: "NotoSans_L";
+}
+.homeWrap h1 {
+  color: #a77b73;
+  font-size: 46px;
+  text-align: center;
+  font-family: "NotoSans_R";
+  line-height: 1.2;
+}
+.homeWrap h2 {
+  color: #a77b73;
+  font-size: 21px;
+  text-align: center;
+  font-family: "NotoSans_L";
+  line-height: 1.4;
+}
+
+.homeWrap button {
+  width: 52px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to bottom, #fff 14%, #f2e6e4 100%);
+}
+
+/* ----------about------------ */
+.about {
+  color: #a77b73;
+}
+.about h1 {
+  color: #a77b73;
+  font-size: 46px;
+  font-family: "MonaSans_M";
+}
+.aboutBoxWrap {
+  margin: 50px 0 0 0;
+}
+.aboutBox {
+  width: fit-content;
+  border-radius: 20px;
+  border: 1px solid #f4efee;
+  box-shadow: 0px 1px 10px rgba(65, 42, 28, 0.1);
+}
+.aboutBox .aboxBoxTitle {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 15px;
+  border-bottom: 1px solid #f4efee;
+  background: #faf5f6;
+  font-size: 30px;
+  line-height: 1.3;
+}
+
+.aboutBox .aboxBoxTitle .logo {
+  position: relative;
+  top: 3px;
+  width: 32px;
+  aspect-ratio: 1 / 1;
+  outline: 1px solid #a77b73;
+}
+.aboutUL {
+  padding: 20px 30px;
+  font-family: "MonaSans_M";
+}
+
+.aboutUL li > span {
+  position: relative;
+  font-size: 20px;
+}
+.aboutUL li > span:after {
+  content: "";
+  position: absolute;
+  top: 44%;
+  left: -11px;
+  width: 5px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background: #a77b73;
+}
+.aboutUL li > p {
+  font-size: 18px;
+}
+/* ----------skill------------ */
+/* ----------project------------ */
+/* ----------contact------------ */

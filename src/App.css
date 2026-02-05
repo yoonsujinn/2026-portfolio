@@ -1,6 +1,5 @@
-
 .app_wrap {
-  max-width: 1500px;
-  outline: 1px solid #80bdff;
+  position: relative;
+  height: 100%;
   margin: 0 auto;
 }
