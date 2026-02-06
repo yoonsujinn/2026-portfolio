@@ -1,5 +1,10 @@
+.aboutBoxWrap {
+  display: grid;
+}
+
 .aboutBox {
   width: fit-content;
+  height: fit-content;
   border-radius: 20px;
   border: 1px solid #f4efee;
   box-shadow: 0px 1px 10px rgba(65, 42, 28, 0.1);
@@ -25,16 +30,22 @@
 .aboutUl {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   padding: 20px 30px;
   font-family: "MonaSans_M";
+}
+
+.aboutBox_Skills .aboutUl {
+  gap: 20px;
 }
 
 .aboutUl li > span {
   position: relative;
   font-size: 20px;
 }
-.aboutUl li > span:after {
+.aboutBox_cert .aboutUl li p:after,
+.aboutBox_howIwork .aboutUl li p:after,
+.aboutBox_Skills .aboutUl li > span:after {
   content: "";
   position: absolute;
   top: 44%;
@@ -45,5 +56,9 @@
   background: #a77b73;
 }
 .aboutUl li > p {
+  position: relative;
+  max-width: 363px;
   font-size: 18px;
+  text-align: justify;
+  white-space: pre-line;
 }

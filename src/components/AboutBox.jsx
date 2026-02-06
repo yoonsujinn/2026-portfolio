@@ -4,7 +4,7 @@ const AboutBox = ({data}) => {
   console.log(data, "data~~~");
   return (
     <>
-      <div className="aboutBox">
+      <div className={`aboutBox aboutBox_${data.type}`}>
         <div className="aboxBoxTitle">
           <div className="logo"></div>
           <div className="titleText">{data.title}</div>
@@ -18,9 +18,17 @@ const AboutBox = ({data}) => {
               </li>
             ))}
           {data.type === "howIwork" &&
-            data.items.map((e, idx) => <li key={idx}> {e.desc}</li>)}
+            data.items.map((e, idx) => (
+              <li key={idx}>
+                <p>{e.desc}</p>
+              </li>
+            ))}
           {data.type === "cert" &&
-            data.items.map((e, idx) => <li key={idx}> {e.desc}</li>)}
+            data.items.map((e, idx) => (
+              <li key={idx}>
+                <p>{e.desc}</p>
+              </li>
+            ))}
         </ul>
       </div>
     </>
