@@ -5,8 +5,9 @@ import {aboutData} from "../data/aboutData.js";
 const About = () => {
   return (
     <div className="aboutWrap">
-      <h1>about Me</h1>
       <div className="aboutBoxWrap">
+        <div className="aboutImg"></div>
+
         {aboutData.map((data, idx) => (
           <AboutBox key={idx} data={data} />
         ))}

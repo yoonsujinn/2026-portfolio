@@ -5,7 +5,7 @@ section {
   outline: 1px solid #000;
 }
 section > [class$="Wrap"] {
-  width: 1500px;
+  width: 1240px;
   height: 100%;
   margin: 0 auto;
   padding: 80px 0 0 0;
@@ -30,7 +30,7 @@ section.home {
 }
 .homeWrap h1 {
   color: #a77b73;
-  font-size: 46px;
+  font-size: 65px;
   text-align: center;
   font-family: "NotoSans_R";
   line-height: 1.2;
@@ -43,23 +43,9 @@ section.home {
   line-height: 1.4;
 }
 
-.homeWrap button {
-  width: 52px;
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
-  border: 1px solid #fff;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(to bottom, #fff 14%, #f2e6e4 100%);
-}
-
 /* ----------about------------ */
 .about {
   color: #a77b73;
-}
-.about h1 {
-  font-size: 46px;
-  font-family: "MonaSans_M";
-  margin: 20px 0 30px 0;
 }
 
 /* ----------skill------------ */
