@@ -1,24 +1,35 @@
 button {
   position: relative;
   color: #a77b73;
-  padding: 0px 10px;
+  padding: 4px 16px;
   border-radius: 50px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "MonaSans_SB";
   background: #f5efed;
+}
+
+button:hover {
+  background: #a77b73;
+  color: #fff;
+}
+
+button:hover > .comm {
+  opacity: 1;
 }
 
 button > .comm {
   opacity: 0;
   pointer-events: none;
   position: absolute;
-  bottom: calc(100% + 15px);
+  bottom: calc(100% + 13px);
   left: 50%;
   transform: translate(-50%, 0);
   width: max-content;
-  background: inherit;
-  padding: 0px 10px;
+  background: #a77b73;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
   white-space: pre-line;
   transition: 0.5s;
 }
@@ -26,14 +37,10 @@ button > .comm:after {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: -24%;
+  bottom: -17%;
   transform: translate(-50%, 0%);
   clip-path: polygon(0 0, 100% 0, 50% 100%);
   width: 15px;
   height: 12px;
   background: inherit;
-}
-
-button:hover > .comm {
-  opacity: 1;
 }

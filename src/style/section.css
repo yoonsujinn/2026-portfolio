@@ -62,6 +62,9 @@ section.home {
 .about {
   color: #a77b73;
 }
-
+.aboutWrap > h1 {
+  font-size: 40px;
+  font-family: "MonaSans_L";
+}
 /* ----------project------------ */
 /* ----------contact------------ */

@@ -1,4 +1,5 @@
-const ProjectBox = (data) => {
+const ProjectBox = ({data}) => {
+  console.log(data, "data~~~~~~");
   return (
     <>
       <div className="pjBox react-todo">

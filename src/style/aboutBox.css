@@ -8,7 +8,7 @@
   align-items: center;
 }
 .aboutBoxWrap > :not(:nth-child(4)) {
-  height: 15rem;
+  height: 11.9rem;
 }
 .aboutBoxWrap > :nth-child(1) {
   grid-column: span 1;
@@ -46,12 +46,13 @@
   border-radius: 10px;
   border: 1px solid #f4efee;
   box-shadow: 3px 5px 5px rgb(251 247 244);
+  font-family: "MonaSans_R", "NotoSans_R";
 }
-
 .aboutBox.aboutBox_Skills {
   width: 320px;
   height: 100%;
 }
+
 .aboutBox .aboxBoxTitle {
   display: flex;
   align-items: center;
@@ -74,27 +75,34 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
-  padding: 10px 10px 10px 30px;
-  font-family: "MonaSans_R", "NotoSans_R";
+  padding: 10px;
 }
 
-.aboutUl li > span {
-  position: relative;
-  font-size: 1.3rem;
+.aboutBox:not(.aboutBox_Skills) .aboutUl {
+  height: 100%;
 }
+
+.aboutBox:not(.aboutBox_experience) .aboutUl li {
+  margin: 0 0 0 20px;
+}
+
 .aboutUl li > p {
   position: relative;
   font-size: 1rem;
   white-space: pre-line;
 }
-.aboutBox_aboutMe .aboutUl li p:after,
-.aboutBox_cert .aboutUl li p:after,
-.aboutBox_howIwork .aboutUl li p:after,
-.aboutBox_Skills .aboutUl li > span:after {
+.aboutBox_Skills .aboutUl li > p {
+  font-size: 1.2rem;
+}
+
+.aboutUl li > span {
+  font-size: 1rem;
+}
+
+.aboutBox:not(.aboutBox_experience) .aboutUl li p:after {
   content: "";
   position: absolute;
-  top: 44%;
+  top: 42%;
   left: -15px;
   width: 5px;
   aspect-ratio: 1 / 1;
@@ -111,17 +119,10 @@
   gap: 5px;
 }
 
-span.dateWrap .date_1 {
-  width: 76px;
-}
-span.dateWrap .date_2 {
-  width: 76px;
-  text-align: right;
-}
-
 .aboutButtonWrap {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
   margin: 20px 0 0 0;
 }

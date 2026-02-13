@@ -2,6 +2,7 @@ import AboutButton from "./AboutButton";
 import {aboutButtonData} from "../data/aboutButtonData.js";
 
 const AboutBox = ({data}) => {
+  console.log(data, "data~~~");
   return (
     <>
       <div className={`aboutBox aboutBox_${data.type}`}>
@@ -29,15 +30,10 @@ const AboutBox = ({data}) => {
             <>
               {data.items.map((e, idx) => (
                 <li key={idx}>
-                  <span>{e.name}</span>
-                  <p>{e.desc}</p>
+                  <p>{e.name}</p>
+                  <span>{e.desc}</span>
                 </li>
               ))}
-              <div className="aboutButtonWrap">
-                {aboutButtonData.items.map((data, idx) => (
-                  <AboutButton key={idx} data={data} />
-                ))}
-              </div>
             </>
           )}
 
@@ -51,14 +47,19 @@ const AboutBox = ({data}) => {
             data.items.map((e, idx) => (
               <li key={idx}>
                 <span className="dateWrap">
-                  <span className="date_1">{e.date_1}</span>
-                  <i>~</i>
-                  <span className="date_2">{e.date_2}</span>
+                  {e.date_1} ~ {e.date_2}
                 </span>
                 <p>{e.desc}</p>
               </li>
             ))}
         </ul>
+        {data.type === "Skills" && (
+          <div className="aboutButtonWrap">
+            {aboutButtonData.items.map((data, idx) => (
+              <AboutButton key={idx} data={data} />
+            ))}
+          </div>
+        )}
       </div>
     </>
   );
