@@ -1,0 +1,39 @@
+button {
+  position: relative;
+  color: #a77b73;
+  padding: 0px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "MonaSans_SB";
+  background: #f5efed;
+}
+
+button > .comm {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  bottom: calc(100% + 15px);
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: max-content;
+  background: inherit;
+  padding: 0px 10px;
+  white-space: pre-line;
+  transition: 0.5s;
+}
+button > .comm:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -24%;
+  transform: translate(-50%, 0%);
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  width: 15px;
+  height: 12px;
+  background: inherit;
+}
+
+button:hover > .comm {
+  opacity: 1;
+}

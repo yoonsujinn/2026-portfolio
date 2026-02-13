@@ -5,7 +5,6 @@ const Header = () => {
     <div className="header">
       <div className="headerWrap">
         <div className="headerLeft">
-          <p>2026</p>
           <p>YOONSUJIN PORTFOLIO</p>
         </div>
         <div className="headerRight">

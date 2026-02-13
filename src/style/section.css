@@ -1,3 +1,7 @@
+@import url(./AboutButton.css);
+@import url(./aboutBox.css);
+@import url(./project.css);
+
 section {
   position: relative;
   width: 100%;
@@ -8,8 +12,9 @@ section > [class$="Wrap"] {
   width: 1240px;
   height: 100%;
   margin: 0 auto;
-  padding: 80px 0 0 0;
+  padding: 60px 0 0 0;
   box-sizing: border-box;
+  outline: 1px solid #888;
 }
 
 /* ----------home------------ */
@@ -30,10 +35,10 @@ section.home {
 }
 .homeWrap h1 {
   color: #a77b73;
-  font-size: 65px;
+  font-size: 55px;
   text-align: center;
   font-family: "NotoSans_R";
-  line-height: 1.2;
+  line-height: 1.1;
 }
 .homeWrap h2 {
   color: #a77b73;
@@ -48,6 +53,5 @@ section.home {
   color: #a77b73;
 }
 
-/* ----------skill------------ */
 /* ----------project------------ */
 /* ----------contact------------ */

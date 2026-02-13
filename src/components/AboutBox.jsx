@@ -1,7 +1,7 @@
-import "../style/aboutBox.css";
+import AboutButton from "./AboutButton";
+import {aboutButtonData} from "../data/aboutButtonData.js";
 
 const AboutBox = ({data}) => {
-  console.log(data, "data~~~");
   return (
     <>
       <div className={`aboutBox aboutBox_${data.type}`}>
@@ -10,6 +10,12 @@ const AboutBox = ({data}) => {
           <div className="titleText">{data.title}</div>
         </div>
         <ul className="aboutUl">
+          {data.type === "howIwork" &&
+            data.items.map((e, idx) => (
+              <li key={idx}>
+                <p>{e.desc}</p>
+              </li>
+            ))}
           {data.type === "aboutMe" &&
             data.items.map((e, idx) => (
               <li key={idx}>
@@ -19,19 +25,22 @@ const AboutBox = ({data}) => {
               </li>
             ))}
 
-          {data.type === "Skills" &&
-            data.items.map((e, idx) => (
-              <li key={idx}>
-                <span>{e.name}</span>
-                <p>{e.desc}</p>
-              </li>
-            ))}
-          {data.type === "howIwork" &&
-            data.items.map((e, idx) => (
-              <li key={idx}>
-                <p>{e.desc}</p>
-              </li>
-            ))}
+          {data.type === "Skills" && (
+            <>
+              {data.items.map((e, idx) => (
+                <li key={idx}>
+                  <span>{e.name}</span>
+                  <p>{e.desc}</p>
+                </li>
+              ))}
+              <div className="aboutButtonWrap">
+                {aboutButtonData.items.map((data, idx) => (
+                  <AboutButton key={idx} data={data} />
+                ))}
+              </div>
+            </>
+          )}
+
           {data.type === "cert" &&
             data.items.map((e, idx) => (
               <li key={idx}>

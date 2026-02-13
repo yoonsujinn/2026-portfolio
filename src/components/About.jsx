@@ -7,11 +7,9 @@ const About = () => {
     <div className="aboutWrap">
       <div className="aboutBoxWrap">
         <div className="aboutImg"></div>
-
         {aboutData.map((data, idx) => (
           <AboutBox key={idx} data={data} />
         ))}
-        {/* <AboutBox /> */}
       </div>
     </div>
   );

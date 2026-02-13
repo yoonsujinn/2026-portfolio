@@ -2,10 +2,12 @@
   position: fixed;
   top: 0px;
   width: 100%;
-  height: 80px;
+  height: 60px;
   color: #a77b73;
   z-index: 5;
   font-family: "MonaSans_L";
+  background: rgb(255 247 247 / 14%);
+  backdrop-filter: blur(10px);
 }
 
 .headerWrap {
@@ -15,20 +17,18 @@
   width: 1240px;
   height: 100%;
   margin: 0 auto;
-}
-
-.headerLeft {
-  line-height: 1.1;
-}
-.headerLeft p:nth-child(1) {
-  font-size: 17px;
-}
-.headerLeft p:nth-child(2) {
-  font-size: 24px;
-}
-
-.headerRight {
   font-size: 20px;
+}
+
+.headerLeft > p {
+  position: relative;
+}
+.headerLeft > p:after {
+  content: "2026";
+  position: absolute;
+  top: -44%;
+  left: 0;
+  font-size: 15px;
 }
 
 .headerRight ul {
