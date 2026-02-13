@@ -2,7 +2,6 @@ import AboutButton from "./AboutButton";
 import {aboutButtonData} from "../data/aboutButtonData.js";
 
 const AboutBox = ({data}) => {
-  console.log(data, "data~~~");
   return (
     <>
       <div className={`aboutBox aboutBox_${data.type}`}>

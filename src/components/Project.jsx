@@ -1,9 +1,8 @@
 import "../style/section.css";
 import {projectData} from "../data/projectData";
-
 import ProjectBox from "./ProjectBox";
 
-const Project = ({clsName}) => {
+const Project = () => {
   return (
     <div className="projectWrap">
       <h1 className="title_1">Main Project</h1>
