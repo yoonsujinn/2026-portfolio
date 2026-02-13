@@ -7,20 +7,20 @@
   height: fit-content;
   align-items: center;
 }
+.aboutBoxWrap > :not(:nth-child(4)) {
+  height: 15rem;
+}
 .aboutBoxWrap > :nth-child(1) {
   grid-column: span 1;
   grid-row: span 1;
-  height: 11rem;
 }
 .aboutBoxWrap > :nth-child(2) {
   grid-column: span 1;
   grid-row: span 1;
-  height: 11rem;
 }
 .aboutBoxWrap > :nth-child(3) {
   grid-column: span 1;
   grid-row: span 1;
-  height: 11rem;
 }
 .aboutBoxWrap > :nth-child(4) {
   grid-column: span 1;
@@ -29,12 +29,10 @@
 .aboutBoxWrap > :nth-child(5) {
   grid-column: span 1;
   grid-row: span 1;
-  height: 11rem;
 }
 .aboutBoxWrap > :nth-child(6) {
   grid-column: span 2;
   grid-row: span 1;
-  height: 11rem;
 }
 
 .aboutImg {
@@ -52,6 +50,7 @@
 
 .aboutBox.aboutBox_Skills {
   width: 320px;
+  height: 100%;
 }
 .aboutBox .aboxBoxTitle {
   display: flex;
