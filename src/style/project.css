@@ -2,28 +2,6 @@
   position: relative;
 }
 
-.projectWrap > h1 {
-  position: relative;
-  color: #a77b73;
-  font-size: 40px;
-  font-family: "MonaSans_L";
-}
-
-.projectWrap > h1.title_1 {
-  text-align: right;
-  margin: 0 0 20px 0;
-}
-.projectWrap > h1.title_1:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 0%;
-  transform: translate(0%, -50%);
-  width: 80%;
-  height: 3px;
-  background: #a77b73;
-}
 /* projecBox.jsx--------------------- */
 
 .pjBox {

@@ -17,7 +17,6 @@ section > [class$="Wrap"] {
 /* ----------home------------ */
 section.home {
   height: 100%;
-
   background: linear-gradient(to top, #fff 26%, #e2d1ce 100%);
 }
 .homeWrap {
@@ -62,8 +61,36 @@ section.home {
   color: #a77b73;
 }
 .aboutWrap > h1 {
-  font-size: 40px;
-  font-family: "MonaSans_L";
+  display: flex;
+  width: 100vw;
+  height: 8.8vh;
+  background: url(/src/assets/about/aboutBg.jpg) center / 12.3%;
+  font-family: "MonaSans_SB";
+  font-size: 4.5rem;
+  align-items: center;
+  justify-content: center;
 }
 /* ----------project------------ */
+.projectWrap > h1 {
+  position: relative;
+  color: #a77b73;
+  font-size: 4.5rem;
+  font-family: "MonaSans_SB";
+}
+
+.projectWrap > h1.title_1 {
+  text-align: right;
+  margin: 0 0 20px 0;
+}
+.projectWrap > h1.title_1:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  width: 63.9%;
+  height: 3px;
+  background: #a77b73;
+}
 /* ----------contact------------ */
