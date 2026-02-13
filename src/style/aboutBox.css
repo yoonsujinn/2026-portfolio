@@ -8,7 +8,7 @@
   align-items: center;
 }
 .aboutBoxWrap > :not(:nth-child(4)) {
-  height: 11.9rem;
+  height: 13rem;
 }
 .aboutBoxWrap > :nth-child(1) {
   grid-column: span 1;
@@ -88,15 +88,15 @@
 
 .aboutUl li > p {
   position: relative;
-  font-size: 1rem;
+  font-size: 1.2rem;
   white-space: pre-line;
 }
-.aboutBox_Skills .aboutUl li > p {
-  font-size: 1.2rem;
-}
 
+.aboutBox_Skills .aboutUl li > p {
+  font-weight: bold;
+}
 .aboutUl li > span {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .aboutBox:not(.aboutBox_experience) .aboutUl li p:after {
@@ -124,5 +124,5 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  margin: 20px 0 0 0;
+  margin: 20px 0;
 }

@@ -32,7 +32,7 @@
 }
 
 .pjBox .img {
-  width: 50vh;
+  width: 33vw;
   height: 60vh;
   background-color: #f3e3e1;
   margin-right: auto;
@@ -44,7 +44,7 @@
   top: 50%;
   right: 0;
   transform: translate(0, -50%);
-  width: 55vh;
+  width: 31vw;
   height: 39vh;
   padding: 20px;
   background-color: #fef6f6;
