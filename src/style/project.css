@@ -5,7 +5,9 @@
 /* projecBox.jsx--------------------- */
 
 .pjBox {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -13,21 +15,17 @@
   width: 33vw;
   height: 60vh;
   background-color: #f3e3e1;
-  margin-right: auto;
   border-radius: 20px;
 }
 
 .pjBox .pjBoxWrap {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translate(0, -50%);
+  transform: translate(-3rem, 0px);
   width: 31vw;
   height: 39vh;
   padding: 20px;
   background-color: #fef6f6;
-  font-family: "MonaSans_R", "NotoSans_R";
   color: #a2847c;
+  font-family: "MonaSans_R", "NotoSans_R";
 }
 
 .projectTitle {
