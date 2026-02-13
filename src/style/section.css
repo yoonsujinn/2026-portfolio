@@ -63,10 +63,10 @@ section.home {
 .aboutWrap > h1 {
   display: flex;
   width: 100vw;
-  height: 8.8vh;
+  height: 10rem;
   background: url(/src/assets/about/aboutBg.jpg) center / 12.3%;
   font-family: "MonaSans_SB";
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   align-items: center;
   justify-content: center;
 }
@@ -74,7 +74,7 @@ section.home {
 .projectWrap > h1 {
   position: relative;
   color: #a77b73;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-family: "MonaSans_SB";
 }
 
@@ -89,7 +89,7 @@ section.home {
   top: 50%;
   left: 0%;
   transform: translate(0%, -50%);
-  width: 63.9%;
+  width: 71.8%;
   height: 3px;
   background: #a77b73;
 }
