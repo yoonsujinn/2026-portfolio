@@ -26,7 +26,7 @@ section.home {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 1rem;
   margin: 90px 0 0 0;
 }
 .homeWrap > p {
@@ -35,7 +35,7 @@ section.home {
 }
 .homeWrap h1 {
   color: #a77b73;
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-align: center;
   font-family: "NotoSans_R";
   line-height: 1.1;
@@ -49,6 +49,16 @@ section.home {
 }
 
 /* ----------about------------ */
+
+.aboutWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 90px 0 0 0;
+}
+
 .about {
   color: #a77b73;
 }

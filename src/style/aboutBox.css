@@ -60,7 +60,7 @@
   border-radius: 10px 10px 0 0;
   border-bottom: 1px solid #f4efee;
   gap: 15px;
-  font-size: 25px;
+  font-size: 1.6rem;
   line-height: 1.1;
 }
 
@@ -82,11 +82,11 @@
 
 .aboutUl li > span {
   position: relative;
-  font-size: 20px;
+  font-size: 1.3rem;
 }
 .aboutUl li > p {
   position: relative;
-  font-size: 16px;
+  font-size: 1rem;
   white-space: pre-line;
 }
 .aboutBox_aboutMe .aboutUl li p:after,
