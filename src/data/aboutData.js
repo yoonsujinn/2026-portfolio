@@ -38,7 +38,7 @@ export const aboutData = [
 
   {
     type: "aboutMe",
-    title: "about Me",
+    title: "About Me",
     items: [
       {
         name: "NAME",
