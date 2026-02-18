@@ -7,7 +7,7 @@ const ProjectBox = ({data}) => {
       {data.type === "MainProject" &&
         data.items.map((e, idx) => (
           <div className="pjBox react-todo" key={idx}>
-            <div className={`img ${data.type}Img`}></div>
+            <div className={`img ${data.projectName}Img`}></div>
             <div className="pjTextWrap">
               <div className="projectTitle">{e.name}</div>
               <div className="stackListWrap">

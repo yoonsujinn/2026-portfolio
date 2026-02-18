@@ -9,6 +9,7 @@
 .pjBox {
   display: flex;
   align-items: center;
+  margin: 0 0 20px 0;
 }
 
 .pjBox .img {
@@ -16,8 +17,9 @@
   width: 55%;
   height: 30rem;
   background-color: #e6e3e1;
+  background: url(../assets/project/react-todo.png) center / cover no-repeat;
 }
-.pjBox .img.MainProjectImg:after {
+/* .pjBox .img.MainProjectImg:after {
   content: "";
   position: absolute;
   top: 0;
@@ -27,8 +29,8 @@
   opacity: 0.6;
   transition: 0.3s;
   background: url(../assets/project/react-todo.png) center / cover no-repeat;
-}
-.pjBox .img:hover {
+} */
+/* .pjBox .img:hover {
   background-color: unset;
   opacity: 1;
   transition: 0.3s;
@@ -36,7 +38,7 @@
 .pjBox .img:hover:after {
   opacity: 1;
 }
-
+*/
 .pjTextWrap {
   transform: translate(-20px, 0);
   width: 45%;
