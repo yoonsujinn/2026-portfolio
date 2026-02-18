@@ -1,27 +1,26 @@
-.projectWrap {
+.pjBoxWrap {
   position: relative;
+  width: 90%;
+  margin: 0 auto;
 }
 
 /* projecBox.jsx--------------------- */
 
 .pjBox {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 100%;
 }
 
 .pjBox .img {
   width: 55%;
-  height: 65vh;
-  border-radius: 20px;
+  height: 80vh;
   background-color: #b69e91;
 }
 
-.pjBox .pjBoxWrap {
-  transform: translate(-1.4rem, 0px);
+.pjTextWrap {
+  transform: translate(-20px, 0);
   width: 45%;
-  height: 45vh;
+  height: 60vh;
   padding: 20px;
   box-shadow: 4px 4px 5px #5b4b3033;
   background-color: #fefaf9;

@@ -11,8 +11,8 @@ const Project = () => {
           <ProjectBox key={idx} data={data} />
         ))}
       </div>
-      <h1 className="title_2">Sub Project</h1>
-      <h1 className="title_3">Study</h1>
+      {/* <h1 className="title_2">Sub Project</h1> */}
+      {/* <h1 className="title_3">Study</h1> */}
     </div>
   );
 };
