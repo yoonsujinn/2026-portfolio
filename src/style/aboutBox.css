@@ -60,17 +60,18 @@
   padding: 10px 10px;
   border-radius: 10px 10px 0 0;
   border-bottom: 1px solid #f4efee;
-  gap: 15px;
+  gap: 7px;
   font-size: 1.6rem;
   line-height: 1.1;
 }
 
 .aboutBox .aboxBoxTitle .logo {
-  position: relative;
-  top: 0px;
-  width: 26px;
-  aspect-ratio: 1 / 1;
-  outline: 1px solid #a77b73;
+  display: contents;
+
+  font-size: 30px;
+}
+.aboutBox .aboxBoxTitle .logo > {
+  display: block;
 }
 .aboutUl {
   display: flex;

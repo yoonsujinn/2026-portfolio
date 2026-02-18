@@ -4,9 +4,9 @@ export const projectData = [
     items: [
       {
         name: "React Todo List",
-        members: 1,
-        techStack: "Vite React",
         img: "/assets/project/react-todo.png",
+        members: 1,
+        techStack: ["Vite", "React"],
         view: "https://yoonsujinn.github.io/react-todo",
         git: "https://github.com/yoonsujinn/react-todo",
         desc: [

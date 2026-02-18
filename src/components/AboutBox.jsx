@@ -1,12 +1,24 @@
 import AboutButton from "./AboutButton";
 import {aboutButtonData} from "../data/aboutButtonData.js";
 
+import {HiOutlineAnnotation} from "react-icons/hi";
+import {FaAddressCard} from "react-icons/fa";
+import {VscCode} from "react-icons/vsc";
+import {TbCertificate} from "react-icons/tb";
+import {HiOutlineUserCircle} from "react-icons/hi";
+
 const AboutBox = ({data}) => {
   return (
     <>
       <div className={`aboutBox aboutBox_${data.type}`}>
         <div className="aboxBoxTitle">
-          <div className="logo"></div>
+          <div className="logo">
+            {data.type === "howIwork" && <HiOutlineAnnotation />}
+            {data.type === "cert" && <TbCertificate />}
+            {data.type === "Skills" && <VscCode />}
+            {data.type === "aboutMe" && <HiOutlineUserCircle />}
+            {data.type === "experience" && <FaAddressCard />}
+          </div>
           <div className="titleText">{data.title}</div>
         </div>
         <ul className="aboutUl">

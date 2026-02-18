@@ -2,6 +2,7 @@ export const aboutData = [
   {
     type: "howIwork",
     title: "How I Work",
+    logo: "ImGrin2",
     items: [
       {desc: "구조를 먼저 설계합니다."},
       {desc: "재사용을 고려해 구현합니다."},
@@ -12,12 +13,15 @@ export const aboutData = [
   {
     type: "cert",
     title: "Certificates",
+    logo: "ImGrin2",
+
     items: [{desc: "정보처리산업기사"}, {desc: ["GTQ"]}],
   },
 
   {
     type: "Skills",
     title: "Skills",
+    logo: "ImGrin2",
     items: [
       {
         name: "HTML / CSS",
@@ -39,6 +43,8 @@ export const aboutData = [
   {
     type: "aboutMe",
     title: "About Me",
+    logo: "ImGrin2",
+
     items: [
       {
         name: "NAME",
@@ -58,6 +64,8 @@ export const aboutData = [
   {
     type: "experience",
     title: "Experience",
+    logo: "ImGrin2",
+
     items: [
       {
         date_1: "2023.11",

@@ -62,7 +62,7 @@ section.home {
 }
 .aboutWrap > h1 {
   display: flex;
-  width: 100vw;
+  width: 99vw;
   height: 10rem;
   background: url(/src/assets/about/aboutBg.jpg) center / 12.3%;
   font-family: "MonaSans_SB";
