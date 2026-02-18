@@ -12,22 +12,75 @@
 }
 
 .pjBox .img {
+  position: relative;
   width: 55%;
-  height: 80vh;
-  background-color: #b69e91;
+  height: 30rem;
+  background-color: #e6e3e1;
+}
+.pjBox .img.MainProjectImg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  transition: 0.3s;
+  background: url(../assets/project/react-todo.png) center / cover no-repeat;
+}
+.pjBox .img:hover {
+  background-color: unset;
+  opacity: 1;
+  transition: 0.3s;
+}
+.pjBox .img:hover:after {
+  opacity: 1;
 }
 
 .pjTextWrap {
   transform: translate(-20px, 0);
   width: 45%;
-  height: 60vh;
-  padding: 20px;
+  padding: 1.2rem;
   box-shadow: 4px 4px 5px #5b4b3033;
   background-color: #fefaf9;
   color: #5d4336;
   font-family: "MonaSans_R", "NotoSans_R";
 }
 
+.pjTextWrap > .stackListWrap {
+  display: flex;
+  gap: 5px;
+  margin: 10px 0;
+}
 .projectTitle {
   font-size: 2rem;
+  font-family: "MonaSans_M";
+}
+
+.pjTextWrap .stack {
+  background: #f5efed;
+  padding: 0 5px;
+  font-size: 1rem;
+}
+
+.descUl {
+  margin: 10px 0;
+}
+.pjTextWrap > a.gitBox {
+  margin: 0 0 10px 0;
+}
+
+.viewBox,
+.gitBox {
+  display: flex;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: 2px;
+  color: #5d4336;
+  background: #f5efed;
+  font-family: "MonaSans_SB";
+}
+.viewBox svg,
+.gitBox svg {
+  font-size: 1.5rem;
 }
