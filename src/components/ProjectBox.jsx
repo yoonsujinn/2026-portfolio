@@ -17,7 +17,7 @@ const ProjectBox = ({data}) => {
                   </div>
                 ))}
               </div>
-              {/* <div>프로젝트 인원 : {e.members}명</div> */}
+              <div className="members">프로젝트 인원 : {e.members}명</div>
               <ul className="descUl">
                 {e.desc.map((d, liIdx) => (
                   <li key={liIdx}>{d}</li>

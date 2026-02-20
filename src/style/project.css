@@ -56,6 +56,7 @@
 }
 .projectTitle {
   font-size: 2rem;
+  line-height: 2rem;
   font-family: "MonaSans_M";
 }
 
@@ -64,10 +65,15 @@
   padding: 0 5px;
   font-size: 1rem;
 }
-
+.descUl,
+.members {
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
 .descUl {
   margin: 10px 0;
 }
+
 .pjTextWrap > a.gitBox {
   margin: 0 0 10px 0;
 }

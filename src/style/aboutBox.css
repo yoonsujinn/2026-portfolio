@@ -1,8 +1,7 @@
 .aboutBoxWrap {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 20px;
-  row-gap: 20px;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
   width: fit-content;
   height: fit-content;
   align-items: center;
@@ -12,11 +11,11 @@
   height: 13.8rem;
 }
 .aboutBoxWrap > :nth-child(1) {
-  grid-column: span 1;
+  grid-column: span 3;
   grid-row: span 1;
 }
 .aboutBoxWrap > :nth-child(2) {
-  grid-column: span 1;
+  grid-column: span 3;
   grid-row: span 1;
 }
 .aboutBoxWrap > :nth-child(3) {
@@ -24,15 +23,16 @@
   grid-row: span 1;
 }
 .aboutBoxWrap > :nth-child(4) {
-  grid-column: span 1;
+  grid-column: span 3;
   grid-row: span 2;
 }
+
 .aboutBoxWrap > :nth-child(5) {
-  grid-column: span 1;
+  grid-column: span 3;
   grid-row: span 1;
 }
 .aboutBoxWrap > :nth-child(6) {
-  grid-column: span 2;
+  grid-column: span 4;
   grid-row: span 1;
 }
 
@@ -48,10 +48,6 @@
   border: 1px solid #f4efee;
   box-shadow: 3px 5px 5px rgb(251 247 244);
   font-family: "MonaSans_R", "NotoSans_R";
-}
-.aboutBox.aboutBox_Skills {
-  width: 320px;
-  height: 100%;
 }
 
 .aboutBox .aboxBoxTitle {
