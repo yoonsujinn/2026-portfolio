@@ -1,6 +1,6 @@
 .pjBoxWrap {
   position: relative;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -15,7 +15,7 @@
 .pjBox .img {
   position: relative;
   width: 55%;
-  height: 22rem;
+  height: 24rem;
   background-color: #e6e3e1;
 }
 
@@ -34,7 +34,6 @@
 }
 
 .pjTextWrap {
-  transform: translate(-20px, 0);
   width: 55%;
   padding: 1rem;
   box-shadow: 4px 4px 5px #5b4b3033;
@@ -61,27 +60,33 @@
 }
 .descUl,
 .members {
-  font-size: 1rem;
-  line-height: 1.2rem;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
 }
 .descUl {
   margin: 10px 0;
 }
 
-.pjTextWrap > a.gitBox {
-  margin: 0 0 10px 0;
+.pjTextWrap > .iconBox {
+  margin: 0 0 10px;
+}
+.pjTextWrap > .iconBox:last-child {
+  margin: 0;
 }
 
 .iconBox {
   display: flex;
+  align-items: center;
   gap: 5px;
   padding: 5px 10px;
   border-radius: 2px;
   color: #5d4336;
   background: #f5efed;
-  font-family: "MonaSans_SB";
+  font-family: "MonaSans_R";
+  font-size: 0.9rem;
 }
 .iconBox svg {
+  align-self: flex-start;
   font-size: 1.5rem;
   flex-shrink: 0;
 }
