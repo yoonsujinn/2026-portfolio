@@ -6,7 +6,7 @@ const ProjectBox = ({data}) => {
     <>
       {data.type === "MainProject" &&
         data.items.map((e, idx) => (
-          <div className="pjBox react-todo" key={idx}>
+          <div className={`pjBox ${e.projectName}`} key={idx}>
             <div className={`img ${data.projectName}Img`}></div>
             <div className="pjTextWrap">
               <div className="projectTitle">{e.name}</div>
@@ -17,13 +17,17 @@ const ProjectBox = ({data}) => {
                   </div>
                 ))}
               </div>
-              <div className="members">프로젝트 인원 : {e.members}명</div>
+              <div className="members">
+                {e.members === 1
+                  ? "개인 프로젝트"
+                  : `프로젝트 인원 : ${e.members} 명`}
+              </div>
               <ul className="descUl">
                 {e.desc.map((d, liIdx) => (
                   <li key={liIdx}>{d}</li>
                 ))}
               </ul>
-              <a href={e.git} target="_blank" className="gitBox">
+              <a href={e.git} target="blank" className="gitBox">
                 <FaGithub />
                 {e.git}
               </a>
