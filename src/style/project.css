@@ -72,8 +72,7 @@
   margin: 0 0 10px 0;
 }
 
-.viewBox,
-.gitBox {
+.iconBox {
   display: flex;
   gap: 5px;
   padding: 5px 10px;
@@ -82,7 +81,7 @@
   background: #f5efed;
   font-family: "MonaSans_SB";
 }
-.viewBox svg,
-.gitBox svg {
+.iconBox svg {
   font-size: 1.5rem;
+  flex-shrink: 0;
 }

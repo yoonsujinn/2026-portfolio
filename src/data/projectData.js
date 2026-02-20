@@ -45,9 +45,10 @@ export const projectData = [
         techStack: ["HTML", "CSS", "JavaScript"],
         git: "https://github.com/yoonsujinn/space-quiz-project",
         view: "https://yoonsujinn.github.io/space-quiz-project/index.html",
+        spec: "https://docs.google.com/presentation/d/1MIJJfgI93l_k2MEa3y-Hn1rgzRDFH-8WJDY3pYwBA-U/edit?slide=id.p&pli=1#slide=id.p",
         desc: [
           "퇴근 후 실력 향상을 목표로 기획·디자인·개발한 팀 사이드 프로젝트입니다.",
-          "우주에서 퀴즈를 푸는 콘셉트의 인터랙티브 교육용 웹 애플리케이션을 구현했습니다",
+          "우주에서 퀴즈를 푸는 콘셉트의 인터랙티브 교육용 웹 애플리케이션을 구현했습니다.",
         ],
       },
     ],

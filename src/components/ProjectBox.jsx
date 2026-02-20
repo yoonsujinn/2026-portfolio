@@ -1,5 +1,6 @@
 import {FaGithub} from "react-icons/fa";
 import {GoLinkExternal} from "react-icons/go";
+import {PiClipboardTextLight} from "react-icons/pi";
 
 const ProjectBox = ({data}) => {
   return (
@@ -27,25 +28,21 @@ const ProjectBox = ({data}) => {
                   <li key={liIdx}>{d}</li>
                 ))}
               </ul>
-              <a href={e.git} target="blank" className="gitBox">
+              {e.spec && (
+                <a href={e.spec} target="blank" className="iconBox specBox">
+                  <PiClipboardTextLight />
+                  {e.spec}
+                </a>
+              )}
+              <a href={e.git} target="blank" className="iconBox gitBox">
                 <FaGithub />
                 {e.git}
               </a>
-              <a href={e.view} target="_blank" className="viewBox">
+              <a href={e.view} target="_blank" className="iconBox viewBox">
                 <GoLinkExternal />
                 {e.view}
               </a>
             </div>
-            {/* 
-            <div className="gitWrap"></div>
-            <div>주요기능</div>
-            <div>사용기능</div>
-            <div className="comment">
-              <ul>
-                <li>리액트를 활용해서 작업</li>
-              </ul>
-            </div>
-            <div className="ur">url</div> */}
           </div>
         ))}
     </>
