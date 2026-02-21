@@ -1,6 +1,7 @@
 export const projectData = [
   {
     type: "MainProject",
+    typeName: "MainProject",
     items: [
       {
         projectName: "ReactDiary",
@@ -15,11 +16,6 @@ export const projectData = [
           "홈, 상세, 수정, 작성 페이지를 SPA 구조로 설계하여 라우팅 기반 화면 전환을 구현했습니다.",
         ],
       },
-    ],
-  },
-  {
-    type: "MainProject",
-    items: [
       {
         projectName: "ReactTodo",
         name: "React To do List",
@@ -33,11 +29,6 @@ export const projectData = [
           "useMemo기능을 활용하여 실시간 todo갯수, 완료, 미완료 여부를 확인할 수 있습니다. ",
         ],
       },
-    ],
-  },
-  {
-    type: "MainProject",
-    items: [
       {
         projectName: "space-quiz-project",
         name: "Space Quiz Project",
@@ -51,11 +42,6 @@ export const projectData = [
           "우주에서 퀴즈를 푸는 콘셉트의 인터랙티브 교육용 웹 애플리케이션을 구현했습니다.",
         ],
       },
-    ],
-  },
-  {
-    type: "MainProject",
-    items: [
       {
         projectName: "greenCard",
         name: "Green Card",
@@ -67,6 +53,36 @@ export const projectData = [
           "그린카드 홈페이지의 디자인과 기능을 클론 코딩하며 CSS 애니메이션과 javascript구현 실력을 높인 프로젝트입니다.",
           "시맨틱 마크업을 적용해 웹 문서의 구조적 완성도를 높였으며, 웹 접근성을 고려한 키보드 네비게이션 기능을 추가했습니다.",
         ],
+      },
+    ],
+  },
+  {
+    type: "SubProject",
+    typeName: "SubProject",
+    items: [
+      {
+        projectName: "111111111111",
+        name: "1111",
+        members: 1,
+        git: "https://github.com/yoonsujinn/greenCard",
+        view: "https://yoonsujinn.github.io/greenCard/greenCard.html",
+        desc: "1줄!!",
+      },
+      {
+        projectName: "2222222",
+        name: "2222222",
+        members: 1,
+        git: "https://github.com/yoonsujinn/greenCard",
+        view: "https://yoonsujinn.github.io/greenCard/greenCard.html",
+        desc: "1줄!!",
+      },
+      {
+        projectName: "333333333333333333",
+        name: "333333333333333333",
+        members: 1,
+        git: "https://github.com/yoonsujinn/greenCard",
+        view: "https://yoonsujinn.github.io/greenCard/greenCard.html",
+        desc: "1줄!!",
       },
     ],
   },

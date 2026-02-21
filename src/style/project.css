@@ -1,8 +1,40 @@
+.projectWrap h1 {
+  position: relative;
+  color: #a77b73;
+  font-family: "MonaSans_SB";
+}
+
+.mainProjectWrap {
+  background: #f8f3f3;
+  border-radius: 20px 20px 0 0;
+  padding: 20px 30px 30px 30px;
+}
+h1.title_1 {
+  font-size: 3.5rem;
+  text-align: right;
+  box-sizing: border-box;
+}
+h1.title_1:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translate(0%, -50%);
+  width: 67%;
+  height: 3px;
+  background: #a77b73;
+}
+
+h1.title_2 {
+  font-size: 4rem;
+}
+/* 
 .pjBoxWrap {
   position: relative;
   width: 100%;
   margin: 0 auto;
-}
+} */
 
 /* projecBox.jsx--------------------- */
 
@@ -66,7 +98,6 @@
 .descUl {
   margin: 10px 0;
 }
-
 .pjTextWrap > .iconBox {
   margin: 0 0 10px;
 }
@@ -83,10 +114,10 @@
   color: #5d4336;
   background: #f5efed;
   font-family: "MonaSans_R";
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .iconBox svg {
   align-self: flex-start;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   flex-shrink: 0;
 }

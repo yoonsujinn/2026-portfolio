@@ -6,44 +6,51 @@ const ProjectBox = ({data}) => {
   return (
     <>
       {data.type === "MainProject" &&
-        data.items.map((e, idx) => (
-          <div className={`pjBox ${e.projectName}`} key={idx}>
+        data.items.map((mItems, idx) => (
+          <div className={`pjBox ${mItems.projectName}`} key={idx}>
             <div className={`img ${data.projectName}Img`}></div>
             <div className="pjTextWrap">
-              <div className="projectTitle">{e.name}</div>
+              <div className="projectTitle">{mItems.name}</div>
               <div className="stackListWrap">
-                {e.techStack.map((t, tIdx) => (
+                {mItems.techStack.map((t, tIdx) => (
                   <div className="stack" key={tIdx}>
                     {t}
                   </div>
                 ))}
               </div>
               <div className="members">
-                {e.members === 1
+                {mItems.members === 1
                   ? "개인 프로젝트"
-                  : `프로젝트 인원 : ${e.members} 명`}
+                  : `프로젝트 인원 : ${mItems.members} 명`}
               </div>
               <ul className="descUl">
-                {e.desc.map((d, liIdx) => (
+                {mItems.desc.map((d, liIdx) => (
                   <li key={liIdx}>{d}</li>
                 ))}
               </ul>
-              {e.spec && (
-                <a href={e.spec} target="blank" className="iconBox specBox">
+              {mItems.spec && (
+                <a
+                  href={mItems.spec}
+                  target="blank"
+                  className="iconBox specBox">
                   <PiClipboardTextLight />
-                  {e.spec}
+                  {mItems.spec}
                 </a>
               )}
-              <a href={e.git} target="blank" className="iconBox gitBox">
+              <a href={mItems.git} target="blank" className="iconBox gitBox">
                 <FaGithub />
-                {e.git}
+                {mItems.git}
               </a>
-              <a href={e.view} target="_blank" className="iconBox viewBox">
+              <a href={mItems.view} target="_blank" className="iconBox viewBox">
                 <GoLinkExternal />
-                {e.view}
+                {mItems.view}
               </a>
             </div>
           </div>
+        ))}
+      {data.type === "SubProject" &&
+        data.items.map((sItems, idx) => (
+          <div key={idx} className="subPjWrap"></div>
         ))}
     </>
   );

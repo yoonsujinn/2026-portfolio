@@ -73,38 +73,6 @@ section.home {
 }
 /* ----------project------------ */
 
-.projectWrap h1 {
-  position: relative;
-  color: #a77b73;
-  font-family: "MonaSans_SB";
-}
-
-.MainProjectWrap {
-  background: #f8f3f3;
-  border-radius: 20px 20px 0 0;
-  padding: 20px 30px 30px 30px;
-}
-h1.title_1 {
-  font-size: 3.5rem;
-  text-align: right;
-  box-sizing: border-box;
-}
-h1.title_1:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 30px;
-  transform: translate(0%, -50%);
-  width: 67%;
-  height: 3px;
-  background: #a77b73;
-}
-
-h1.title_2 {
-  text-align: center;
-  font-size: 4rem;
-}
 /*
 
 

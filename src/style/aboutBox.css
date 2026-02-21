@@ -1,6 +1,6 @@
 .aboutBoxWrap {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(15, 1fr);
   gap: 10px;
   width: fit-content;
   height: fit-content;
@@ -15,30 +15,30 @@
   grid-row: span 1;
 }
 .aboutBoxWrap > :nth-child(2) {
-  grid-column: span 3;
+  grid-column: span 4;
   grid-row: span 1;
 }
 .aboutBoxWrap > :nth-child(3) {
-  grid-column: span 1;
+  grid-column: span 3;
   grid-row: span 1;
 }
 .aboutBoxWrap > :nth-child(4) {
-  grid-column: span 3;
+  grid-column: span 5;
   grid-row: span 2;
   height: 100%;
 }
 
 .aboutBoxWrap > :nth-child(5) {
-  grid-column: span 3;
+  grid-column: span 4;
   grid-row: span 1;
 }
 .aboutBoxWrap > :nth-child(6) {
-  grid-column: span 4;
+  grid-column: span 6;
   grid-row: span 1;
 }
 
 .aboutImg {
-  background: url(../assets/about/aboutImg.jpg) center / cover no-repeat;
+  background: url(../assets/about/aboutImg.jpg) center / 124% no-repeat;
 }
 
 .aboutBox {
@@ -64,7 +64,6 @@
 
 .aboutBox .aboxBoxTitle .logo {
   display: contents;
-
   font-size: 30px;
 }
 .aboutBox .aboxBoxTitle .logo > {

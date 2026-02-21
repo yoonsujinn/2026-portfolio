@@ -5,16 +5,22 @@ import ProjectBox from "./ProjectBox";
 const Project = () => {
   return (
     <div className="projectWrap">
-      <div className="MainProjectWrap">
+      <div className="mainProjectWrap">
         <h1 className="title_1">Main Project</h1>
-        <div className="pjBoxWrap">
-          {projectData.map((data, idx) => (
+        {projectData
+          .filter((data) => data.type === "MainProject")
+          .map((data, idx) => (
             <ProjectBox key={idx} data={data} />
           ))}
-        </div>
       </div>
       <h1 className="title_2">Sub Project</h1>
-      {/* <h1 className="title_3">Study</h1> */}
+      <div className="subProjectWrap">
+        {projectData
+          .filter((data) => data.type === "SubProject")
+          .map((data, idx) => (
+            <ProjectBox key={idx} data={data} />
+          ))}
+      </div>
     </div>
   );
 };
