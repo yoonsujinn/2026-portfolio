@@ -48,9 +48,21 @@ const ProjectBox = ({data}) => {
             </div>
           </div>
         ))}
+
       {data.type === "SubProject" &&
         data.items.map((sItems, idx) => (
-          <div key={idx} className="subPjWrap"></div>
+          <div key={idx} className={`subPjBox subPjBox_${sItems.projectName}`}>
+            <div className="projectTitle">{sItems.name}</div>
+            <div className="subPjImg">
+              <div className="imgCover">
+                <div className="comm">{sItems.desc}</div>
+                <div className="buttonWrap">
+                  <GoLinkExternal />
+                  <FaGithub />
+                </div>
+              </div>
+            </div>
+          </div>
         ))}
     </>
   );

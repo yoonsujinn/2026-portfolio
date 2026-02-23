@@ -1,76 +1,79 @@
-.projectWrap h1 {
-  position: relative;
-  color: #a77b73;
-  font-family: "MonaSans_SB";
+.mainProjectWrap {
+  padding: 20px;
+}
+.projectWrap .mainProjectWrap {
+  background: var(--white_1);
 }
 
-.mainProjectWrap {
-  background: #f8f3f3;
-  border-radius: 20px 20px 0 0;
-  padding: 20px 30px 30px 30px;
-}
-h1.title_1 {
+.projectWrap h1 {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  color: var(--brown_1);
   font-size: 3.5rem;
-  text-align: right;
-  box-sizing: border-box;
+  font-family: "MonaSans_SB";
 }
-h1.title_1:after {
+.projectWrap h1 p {
+  position: relative;
+  right: 0;
+  width: fit-content;
+  z-index: 5;
+  text-align: right;
+  background: #ffffff;
+}
+
+.projectWrap h1:after {
   content: "";
   display: block;
   position: absolute;
   top: 50%;
-  left: 30px;
+  left: 0px;
   transform: translate(0%, -50%);
-  width: 67%;
-  height: 3px;
-  background: #a77b73;
-}
-
-h1.title_2 {
-  font-size: 4rem;
-}
-/* 
-.pjBoxWrap {
-  position: relative;
   width: 100%;
-  margin: 0 auto;
-} */
+  height: 3px;
+  background: var(--brown_1);
+}
 
 /* projecBox.jsx--------------------- */
 
 .pjBox {
   display: flex;
   align-items: center;
-  margin: 0 0 20px 0;
+  margin: 0 0 20px;
+  justify-content: center;
+}
+
+.pjBox:last-child {
+  margin: 0;
 }
 
 .pjBox .img {
   position: relative;
-  width: 55%;
-  height: 24rem;
-  background-color: #e6e3e1;
+  width: 45%;
+  height: 19rem;
 }
 
 .pjBox.ReactDiary .img {
-  background: url(../assets/project/react_diary.png) center / cover no-repeat;
+  background: url(../assets/project/react_diary.png) center 1px / 133% no-repeat;
 }
 .pjBox.ReactTodo .img {
-  background: url(../assets/project/react-todo.png) center / cover no-repeat;
+  background: #fff url(/src/assets/project/react-todo.png) center 0px/ 90%
+    no-repeat;
 }
 .pjBox.space-quiz-project .img {
-  background: url(../assets/project/space-quiz-project.png) center / cover
+  background: url(/src/assets/project/space-quiz-project.png) center / 102%
     no-repeat;
 }
 .pjBox.greenCard .img {
-  background: url(../assets/project/greenCard.png) center / contain no-repeat;
+  background: url(/src/assets/project/greenCard.png) top center / cover
+    no-repeat;
 }
-
 .pjTextWrap {
-  width: 55%;
+  width: 52%;
   padding: 1rem;
   box-shadow: 4px 4px 5px #5b4b3033;
-  background-color: #fefaf9;
-  color: #5d4336;
+  background-color: var(--white_3);
+  color: var(--brown_2);
   font-family: "MonaSans_R", "NotoSans_R";
 }
 
@@ -79,12 +82,15 @@ h1.title_2 {
   gap: 5px;
   margin: 10px 0;
 }
+
 .projectTitle {
   font-size: 2rem;
   line-height: 2rem;
   font-family: "MonaSans_M";
 }
-
+.subPjBox .projectTitle {
+  margin: 0 0 20px 0;
+}
 .pjTextWrap .stack {
   background: #f5efed;
   padding: 0 5px;
@@ -111,8 +117,8 @@ h1.title_2 {
   gap: 5px;
   padding: 5px 10px;
   border-radius: 2px;
-  color: #5d4336;
-  background: #f5efed;
+  color: var(--brown_2);
+  background: var(--white_1);
   font-family: "MonaSans_R";
   font-size: 0.8rem;
 }
@@ -120,4 +126,53 @@ h1.title_2 {
   align-self: flex-start;
   font-size: 1.8rem;
   flex-shrink: 0;
+}
+/* subProject----------------------------------- */
+
+.subPjBox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: fit-content;
+  padding: 1rem;
+  color: var(--brown_2);
+  background: var(--white_1);
+  padding: 26px;
+}
+
+.subPjBox .subPjImg {
+  position: relative;
+  width: 28rem;
+  height: 13rem;
+  cursor: pointer;
+  background-position: center;
+  background-size: 105%;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+.subPjBox .subPjImg:hover {
+  background-size: 130%;
+}
+.subPjBox .subPjImg:hover .imgCover {
+  opacity: 1;
+}
+.subPjBox.subPjBox_portfolio2024 .subPjImg {
+  background-image: url(/src/assets/project/portfolio2024.png);
+}
+
+.imgCover {
+  /* opacity: 0; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: #5d4336db;
+  font-family: "MonaSans_R", "NotoSans_R";
+}
+.subPjTitle {
+  font-size: 2rem;
 }

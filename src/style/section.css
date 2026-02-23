@@ -26,20 +26,21 @@ section.home {
   justify-content: center;
   gap: 1rem;
   margin: 90px 0 0 0;
+  color: #fff;
 }
 .homeWrap > p {
   font-size: 1.2rem;
   font-family: "NotoSans_L";
 }
 .homeWrap h1 {
-  color: #a77b73;
+  color: var(--brown_1);
   font-size: 3.5rem;
   text-align: center;
   font-family: "NotoSans_R";
   line-height: 1.1;
 }
 .homeWrap h2 {
-  color: #a77b73;
+  color: var(--brown_1);
   font-size: 1.3rem;
   text-align: center;
   font-family: "NotoSans_L";
@@ -48,29 +49,6 @@ section.home {
 
 /* ----------about------------ */
 
-.aboutWrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  margin: 90px 0 0 0;
-}
-
-.about {
-  color: #a77b73;
-}
-.aboutWrap > h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 99vw;
-  height: 14.5rem;
-  font-family: "MonaSans_SB";
-  font-size: 3.5rem;
-  color: #8a5e57;
-  background: url(/src/assets/about/aboutBg2.png) center / 100%;
-}
 /* ----------project------------ */
 
 /*

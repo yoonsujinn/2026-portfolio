@@ -1,9 +1,16 @@
+:root {
+  --brown_1: #a77b73;
+  --brown_2: #5d4336;
+  --white_1: #f8f3f3;
+  --white_2: #e6e3e1;
+  --white_3: #fefaf9;
+}
+
 #root,
 body,
 html {
   width: 100%;
   height: 100%;
-  color: #fff;
 }
 
 * {

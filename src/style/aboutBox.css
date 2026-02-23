@@ -1,3 +1,27 @@
+.aboutWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 90px 0 0 0;
+}
+
+.about {
+  color: var(--brown_1);
+}
+.aboutWrap > h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 99vw;
+  height: 14.5rem;
+  font-family: "MonaSans_SB";
+  font-size: 3.5rem;
+  color: var(--brown_1);
+  background: url(/src/assets/about/aboutBg2.png) center / 100%;
+}
+
 .aboutBoxWrap {
   display: grid;
   grid-template-columns: repeat(15, 1fr);
@@ -5,7 +29,7 @@
   width: fit-content;
   height: fit-content;
   align-items: center;
-  margin: 4rem 0 4.2rem;
+  margin: 2rem 0;
 }
 .aboutBoxWrap > :not(:nth-child(4)) {
   height: 13.8rem;
@@ -46,7 +70,7 @@
   height: fit-content;
   flex-direction: column;
   border-radius: 10px;
-  border: 1px solid #f4efee;
+  border: 1px solid var(--white_2);
   box-shadow: 3px 5px 5px rgb(251 247 244);
   font-family: "MonaSans_R", "NotoSans_R";
 }
@@ -56,7 +80,7 @@
   align-items: center;
   padding: 10px 10px;
   border-radius: 10px 10px 0 0;
-  border-bottom: 1px solid #f4efee;
+  border-bottom: 1px solid var(--white_2);
   gap: 7px;
   font-size: 1.6rem;
   line-height: 1.1;
