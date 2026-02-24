@@ -23,13 +23,6 @@
 .headerLeft > p {
   position: relative;
 }
-.headerLeft > p:after {
-  content: "2026";
-  position: absolute;
-  top: -44%;
-  left: 0;
-  font-size: 15px;
-}
 
 .headerRight ul {
   display: flex;

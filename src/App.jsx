@@ -1,6 +1,6 @@
 import "./App.css";
 
-// 컴포넌트---------------------
+// 컴포넌트 ---------------------
 import Header from "./components/Header";
 import Home from "./components/Home";
 import About from "./components/About";

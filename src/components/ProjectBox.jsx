@@ -1,6 +1,4 @@
-import {FaGithub} from "react-icons/fa";
-import {GoLinkExternal} from "react-icons/go";
-import {PiClipboardTextLight} from "react-icons/pi";
+import {FaGithub, GoLinkExternal, PiClipboardTextLight} from "../data/icon";
 
 const ProjectBox = ({data}) => {
   return (
@@ -57,8 +55,12 @@ const ProjectBox = ({data}) => {
               <div className="imgCover">
                 <div className="comm">{sItems.desc}</div>
                 <div className="buttonWrap">
-                  <GoLinkExternal />
-                  <FaGithub />
+                  <a href={sItems.view} target="blank">
+                    <GoLinkExternal />
+                  </a>
+                  <a href={sItems.git} target="blank">
+                    <FaGithub />
+                  </a>
                 </div>
               </div>
             </div>

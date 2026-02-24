@@ -15,10 +15,10 @@ const Project = () => {
             <ProjectBox key={idx} data={data} />
           ))}
       </div>
+      <h1 className="title_2">
+        <p>Sub Project</p>
+      </h1>
       <div className="subProjectWrap">
-        <h1 className="title_2">
-          <p>Sub Project</p>
-        </h1>
         {projectData
           .filter((data) => data.type === "SubProject")
           .map((data, idx) => (

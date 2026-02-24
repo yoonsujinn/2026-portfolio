@@ -4,6 +4,7 @@
   --white_1: #f8f3f3;
   --white_2: #e6e3e1;
   --white_3: #fefaf9;
+  --white_4: #f5f1ec;
 }
 
 #root,
@@ -21,6 +22,7 @@ html {
 
 a {
   text-decoration: none;
+  line-height: 0;
 }
 
 ul,

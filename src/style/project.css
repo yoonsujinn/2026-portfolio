@@ -12,6 +12,7 @@
   color: var(--brown_1);
   font-size: 3.5rem;
   font-family: "MonaSans_SB";
+  margin: 2rem 0 0;
 }
 .projectWrap h1 p {
   position: relative;
@@ -39,7 +40,7 @@
 .pjBox {
   display: flex;
   align-items: center;
-  margin: 0 0 20px;
+  margin: 0 0 40px;
   justify-content: center;
 }
 
@@ -84,13 +85,11 @@
 }
 
 .projectTitle {
-  font-size: 2rem;
-  line-height: 2rem;
-  font-family: "MonaSans_M";
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  font-family: "MonaSans_R", "NotoSans_R";
 }
-.subPjBox .projectTitle {
-  margin: 0 0 20px 0;
-}
+
 .pjTextWrap .stack {
   background: #f5efed;
   padding: 0 5px;
@@ -121,6 +120,7 @@
   background: var(--white_1);
   font-family: "MonaSans_R";
   font-size: 0.8rem;
+  line-height: 1.1;
 }
 .iconBox svg {
   align-self: flex-start;
@@ -128,7 +128,16 @@
   flex-shrink: 0;
 }
 /* subProject----------------------------------- */
-
+.subProjectWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.subPjBox .projectTitle {
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
 .subPjBox {
   display: flex;
   align-items: center;
@@ -138,41 +147,98 @@
   padding: 1rem;
   color: var(--brown_2);
   background: var(--white_1);
-  padding: 26px;
+  padding: 20px;
 }
 
 .subPjBox .subPjImg {
   position: relative;
-  width: 28rem;
-  height: 13rem;
-  cursor: pointer;
+  width: 22.5rem;
+  height: 11rem;
   background-position: center;
   background-size: 105%;
   background-repeat: no-repeat;
-  transition: 0.5s;
+  background-color: #fff;
+  transition: 0.3s;
 }
 .subPjBox .subPjImg:hover {
-  background-size: 130%;
+  background-size: 120%;
 }
+
 .subPjBox .subPjImg:hover .imgCover {
   opacity: 1;
 }
+
 .subPjBox.subPjBox_portfolio2024 .subPjImg {
   background-image: url(/src/assets/project/portfolio2024.png);
 }
 
+.subPjBox.subPjBox_greenCardSupport .subPjImg {
+  background-image: url(/src/assets/project/greenCardCustomerService.png);
+  background-position: top center;
+}
+
+.subPjBox.subPjBox_listUI .subPjImg {
+  background-image: url(/src/assets/project/listUI.png?t=1771910651327);
+  background-size: 62%;
+}
+.subPjBox.subPjBox_listUI .subPjImg:hover {
+  background-size: 70%;
+}
+
+.subPjBox.subPjBox_clipPath .subPjImg {
+  background-image: url(/src/assets/project/clipPath.png);
+  background-size: 83%;
+}
+.subPjBox.subPjBox_clipPath .subPjImg:hover {
+  background-size: 93%;
+}
+
+.subPjBox.subPjBox_luckyWheel .subPjImg {
+  background-image: url(/src/assets/project/luckyWheel.png);
+  background-size: 63%;
+}
+.subPjBox.subPjBox_luckyWheel .subPjImg:hover {
+  background-size: 80%;
+}
+
+.subPjBox.subPjBox_findTheNumber .subPjImg {
+  background-image: url(/src/assets/project/findTheNumber.png);
+  background-size: 157%;
+}
+.subPjBox.subPjBox_findTheNumber .subPjImg:hover {
+  background-size: 180%;
+}
+
 .imgCover {
-  /* opacity: 0; */
+  opacity: 0;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   width: 100%;
   height: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  transition: 0.5s;
   color: #fff;
-  background: #5d4336db;
+  background: #362c14eb;
   font-family: "MonaSans_R", "NotoSans_R";
 }
-.subPjTitle {
-  font-size: 2rem;
+.comm {
+  text-align: center;
+  font-size: 1.1rem;
+  white-space: pre-line;
+}
+.buttonWrap {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0 0 0;
+}
+.buttonWrap a svg {
+  background: rgba(255, 255, 255, 0.7);
+  color: var(--brown_2);
+  padding: 5px;
+  font-size: 1.7rem;
+  cursor: pointer;
+  border-radius: 4px;
 }

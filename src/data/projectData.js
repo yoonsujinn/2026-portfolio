@@ -62,10 +62,47 @@ export const projectData = [
     items: [
       {
         projectName: "portfolio2024 ",
-        name: "2024 Portfolio",
+        name: "2024 포트폴리오",
         git: "https://github.com/yoonsujinn/2024-portfolio",
         view: "https://yoonsujinn.github.io/2024-portfolio/",
         desc: "2024년에 제작한 이전 포트폴리오 입니다.",
+      },
+      {
+        projectName: "greenCardSupport",
+        name: "그린카드 고객센터",
+        git: "https://github.com/yoonsujinn/greenCard",
+        view: "https://yoonsujinn.github.io/greenCard/greenCard_2.html",
+        desc: "그린카드 고객센터 페이지를\n클론 코딩하여 구현한 페이지입니다. ",
+      },
+      {
+        projectName: "listUI",
+        name: "컨텐츠 리스트 UI",
+        git: "https://github.com/yoonsujinn/tiny_projects/tree/main/zz_protoHomework",
+        view: "https://yoonsujinn.github.io/tiny_projects/zz_protoHomework/page_1.html",
+        desc: "목록 선택에 따라 콘텐츠가 동적으로\n변경되는 페이지를 구현했습니다. ",
+      },
+      {
+        projectName: "clipPath",
+        name: "획 순서 학습",
+        git: "https://github.com/yoonsujinn/tiny_projects/tree/main/zz_protoHomework",
+        view: "https://yoonsujinn.github.io/tiny_projects/zz_clip_Path_Image/clippath_Image.html",
+        desc: "SVG 요소를 순서대로 클릭해 획마다\n개별적으로 색상이 변경되는 동적UI입니다.",
+      },
+
+      {
+        projectName: "luckyWheel",
+        name: "행운 회전판",
+        git: "https://github.com/yoonsujinn/tiny_projects/tree/main/zz_LuckyWheel",
+        view: "https://yoonsujinn.github.io/tiny_projects/zz_LuckyWheel/LuckyWheel.html",
+        desc: "버튼으로 회전판을 동작시키고, 정지 시 각도에 따라 결과가 결정되도록 구현한 페이지입니다.",
+      },
+
+      {
+        projectName: "findTheNumber",
+        name: "숫자 맞추기 게임",
+        git: "https://github.com/yoonsujinn/tiny_projects/tree/main/zz_Find%20the%20Number",
+        view: "https://yoonsujinn.github.io/tiny_projects/zz_Find%20the%20Number/Find%20the%20Number.html",
+        desc: "랜덤으로 생성된 숫자를 맞추는\nJavaScript 기반 게임입니다.",
       },
     ],
   },
