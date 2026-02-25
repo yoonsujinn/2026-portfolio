@@ -100,8 +100,8 @@ export const projectData = [
       {
         projectName: "findTheNumber",
         name: "숫자 맞추기 게임",
-        git: "https://github.com/yoonsujinn/tiny_projects/tree/main/zz_Find%20the%20Number",
-        view: "https://yoonsujinn.github.io/tiny_projects/zz_Find%20the%20Number/Find%20the%20Number.html",
+        git: "https://github.com/yoonsujinn/tiny_projects/tree/main/zz_Find_the_Number",
+        view: "https://yoonsujinn.github.io/tiny_projects/zz_Find_the_Number/find_the_Number.html",
         desc: "랜덤으로 생성된 숫자를 맞추는\nJavaScript 기반 게임입니다.",
       },
     ],
