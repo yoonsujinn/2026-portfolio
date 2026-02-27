@@ -13,6 +13,10 @@ html {
   width: 100%;
   height: 100%;
 }
+html,
+body {
+  overflow-x: hidden;
+}
 
 * {
   margin: 0;
@@ -38,4 +42,22 @@ h4,
 h5,
 h6 {
   font-weight: normal;
+}
+
+/* 스크롤바 전체 */
+body::-webkit-scrollbar {
+  width: 6px; /* 얇게 */
+}
+
+/* 트랙을 완전히 투명 처리 */
+*::-webkit-scrollbar-track,
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+  background: #ffffff00;
+}
+
+/* thumb만 색상 지정 */
+body::-webkit-scrollbar-thumb {
+  background-color: var(--brown_2);
+  border-radius: 10px;
 }

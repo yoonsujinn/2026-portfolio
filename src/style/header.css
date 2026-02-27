@@ -1,10 +1,12 @@
+@import url(./responsive.css);
+
 .header {
   position: fixed;
   top: 0px;
-  width: 100%;
+  width: 89rem;
   height: 60px;
   color: #a77b73;
-  z-index: 5;
+  z-index: 6;
   font-family: "MonaSans_L";
   background: rgb(255 247 247 / 14%);
   backdrop-filter: blur(10px);

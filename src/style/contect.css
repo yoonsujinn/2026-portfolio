@@ -14,25 +14,16 @@ section.contact {
   background: linear-gradient(to top, #f5f1ec 7%, #fff 100%);
 }
 
-.contactWrap .contactMainText {
-  font-size: 1.4rem;
+.contactMainText p:first-child {
+  font-size: 2.5rem;
+  line-height: 1.1;
+}
+.contactMainText p:nth-child(2) {
+  font-size: 1.2rem;
+  margin: 10px 0 0 5px;
+  line-height: 1.4;
 }
 
-.contactMainText p:first-child {
-  font-size: 3rem;
-  line-height: 1.3;
-}
-/* 
-@keyframes contactAni {
-  from {
-    background-position: left 390px;
-    color: #00000000;
-  }
-  to {
-    background-position: left bottom;
-    color: var(--brown_1);
-  }
-} */
 .contactWrap .iconWrap {
   display: flex;
   gap: 10px;
@@ -62,11 +53,11 @@ section.contact {
 
 .contectBottom svg {
   position: absolute;
-  right: 1rem;
+  right: -1rem;
   bottom: 0;
   border-radius: 50%;
   padding: 10px;
   cursor: pointer;
-  font-size: 3rem;
+  font-size: 2rem;
   background: radial-gradient(circle, #ecdecc 30%, #f5f1ec 80%);
 }
