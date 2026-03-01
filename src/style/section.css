@@ -2,6 +2,7 @@
 @import url(./aboutBox.css);
 @import url(./project.css);
 @import url(./contect.css);
+@import url(./home.css);
 
 section {
   position: relative;
@@ -9,43 +10,18 @@ section {
 }
 
 section > [class$="Wrap"] {
-  width: 1240px;
-  min-width: 1240px;
+  width: 100%;
+  max-width: 1240px;
   height: 100%;
   margin: 0 auto;
+  padding: 0 1.5rem;
   box-sizing: border-box;
 }
 
-/* ----------home------------ */
-section.home {
-  height: 100%;
-  background: linear-gradient(to top, #fff 26%, #e2d1ce 100%);
+/* 1040px 이하 */
+@media (max-width: 1040px) {
 }
 
-.homeWrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  margin: 90px 0 0 0;
-  color: #fff;
-}
-.homeWrap > p {
-  font-size: 1.2rem;
-  font-family: "NotoSans_L";
-}
-.homeWrap h1 {
-  color: var(--brown_1);
-  font-size: 3.5rem;
-  text-align: center;
-  font-family: "NotoSans_R";
-  line-height: 1.1;
-}
-.homeWrap h2 {
-  color: var(--brown_1);
-  font-size: 1.3rem;
-  text-align: center;
-  font-family: "NotoSans_L";
-  line-height: 1.4;
+/* 1024px 이하 */
+@media (max-width: 1024px) {
 }

@@ -1,11 +1,11 @@
-@import url(./responsive.css);
-
 .header {
   position: fixed;
   top: 0px;
-  width: 89rem;
+  width: 99.4%;
   height: 60px;
   color: #a77b73;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
   z-index: 6;
   font-family: "MonaSans_L";
   background: rgb(255 247 247 / 14%);
@@ -16,7 +16,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1240px;
+  width: 100%;
+  max-width: 1240px;
   height: 100%;
   margin: 0 auto;
   font-size: 20px;

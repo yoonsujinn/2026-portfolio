@@ -131,10 +131,10 @@
 .subProjectWrap {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 1.2rem;
 }
 .subPjBox .projectTitle {
-  margin: 0 0 10px 0;
+  margin: 5px 0 15px 0;
   font-size: 1.5rem;
   line-height: 1.5rem;
 }
@@ -147,7 +147,7 @@
   padding: 1rem;
   color: var(--brown_2);
   background: var(--white_1);
-  padding: 20px;
+  padding: 0.7rem;
 }
 
 .subPjBox .subPjImg {

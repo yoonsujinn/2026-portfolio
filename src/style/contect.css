@@ -1,6 +1,7 @@
 section.contact {
   width: 100%;
   height: 82vh;
+  background: linear-gradient(to top, #f5f1ec 7%, #fff 100%);
 }
 
 .contactWrap {
@@ -9,9 +10,7 @@ section.contact {
   justify-content: center;
   width: 100% !important;
   height: 100% !important;
-  /* animation: contactAni 0.8s ease-out forwards; */
   color: var(--brown_1);
-  background: linear-gradient(to top, #f5f1ec 7%, #fff 100%);
 }
 
 .contactMainText p:first-child {
