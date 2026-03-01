@@ -149,3 +149,43 @@
   gap: 10px;
   margin: 20px 0;
 }
+
+/* 1240px 이하 */
+@media (max-width: 1240px) {
+  .aboutBoxWrap {
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .aboutBoxWrap > :nth-child(1) {
+    grid-column: span 4;
+    order: 1;
+  }
+  .aboutBoxWrap > :nth-child(2) {
+    grid-column: span 5;
+    order: 2;
+  }
+  .aboutBoxWrap > :nth-child(3) {
+    grid-column: span 4;
+    order: 3;
+  }
+  .aboutBoxWrap > :nth-child(4) {
+    grid-column: span 15;
+    order: 6;
+  }
+
+  .aboutBoxWrap > :nth-child(5) {
+    grid-column: span 6;
+    order: 4;
+  }
+  .aboutBoxWrap > :nth-child(6) {
+    grid-column: span 8;
+    order: 5;
+  }
+}
+/* 1040px 이하 */
+@media (max-width: 1040px) {
+}
+
+/* 1024px 이하 */
+@media (max-width: 1024px) {
+}

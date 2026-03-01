@@ -131,7 +131,8 @@
 .subProjectWrap {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.2rem;
+  justify-content: center;
+  gap: 0.6rem;
 }
 .subPjBox .projectTitle {
   margin: 5px 0 15px 0;
@@ -241,4 +242,20 @@
   font-size: 1.7rem;
   cursor: pointer;
   border-radius: 4px;
+}
+
+/* 1240px 이하 */
+@media (max-width: 1240px) {
+  .subPjBox .subPjImg {
+    position: relative;
+    width: 18.5rem;
+    height: 9rem;
+  }
+}
+/* 1040px 이하 */
+@media (max-width: 1040px) {
+}
+
+/* 1024px 이하 */
+@media (max-width: 1024px) {
 }

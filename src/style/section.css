@@ -18,6 +18,9 @@ section > [class$="Wrap"] {
   box-sizing: border-box;
 }
 
+/* 1240px 이하 */
+@media (max-width: 1040px) {
+}
 /* 1040px 이하 */
 @media (max-width: 1040px) {
 }
