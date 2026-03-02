@@ -63,7 +63,7 @@
 }
 
 .aboutImg {
-  background: url(../assets/about/aboutImg.jpg) center / 124% no-repeat;
+  background: #fff url(../assets/about/aboutImg.png) center / 14rem no-repeat;
 }
 
 .aboutBox {

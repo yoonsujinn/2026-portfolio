@@ -8,7 +8,6 @@
   .aboutBoxWrap > :nth-child(1) {
     grid-column: span 4;
     order: 1;
-    background-size: 100%;
   }
   .aboutBoxWrap > :nth-child(2) {
     grid-column: span 5;
@@ -54,7 +53,7 @@
 @media (max-width: 885px) {
   .aboutBoxWrap > :nth-child(1) {
     grid-column: span 7;
-    background-size: 100%;
+    background-size: 18rem;
   }
   .aboutBoxWrap > :nth-child(2) {
     grid-column: span 7;
@@ -89,5 +88,56 @@
 
   .contactMainText p:first-child {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .header {
+    display: none;
+  }
+  .aboutBoxWrap {
+    margin: 0rem 0;
+  }
+  .homeWrap h1 {
+    font-size: 2.2rem;
+  }
+  .homeWrap h2 {
+    font-size: 1rem;
+  }
+  .aboutWrap > h1 {
+    height: 6.5rem;
+    font-size: 2.2rem;
+  }
+
+  .aboutBoxWrap > :nth-child(1) {
+    grid-column: span 15;
+    background-size: 18rem;
+  }
+  .aboutBoxWrap > :nth-child(5),
+  .aboutBoxWrap > :nth-child(3),
+  .aboutBoxWrap > :nth-child(2) {
+    grid-column: span 15;
+    height: fit-content;
+  }
+
+  .aboutBoxWrap > :nth-child(4) {
+    grid-column: span 15;
+  }
+
+  .aboutBoxWrap > :nth-child(6) {
+    grid-column: span 15;
+    height: max-content;
+  }
+  .aboutBox_experience .aboutUl li {
+    flex-direction: column;
+    gap: 0;
+    margin: 0 0 0.5rem 0;
+  }
+  .aboutBox_experience .aboutUl li:last-child {
+    margin: 0;
+  }
+  .aboutButtonWrap {
+    gap: 5px;
+    margin: 20px 4px;
   }
 }
