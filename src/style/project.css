@@ -50,19 +50,20 @@
 
 .pjBox .img {
   position: relative;
-  width: 45%;
+  width: 33rem;
   height: 19rem;
 }
 
 .pjBox.ReactDiary .img {
-  background: url(../assets/project/react_diary.png) center 1px / 133% no-repeat;
+  background: url(../assets/project/react_diary.png) center 0px / cover
+    no-repeat;
 }
 .pjBox.ReactTodo .img {
-  background: #fff url(/src/assets/project/react-todo.png) center 0px/ 90%
+  background: #fff url(/src/assets/project/react-todo.png) center 0px / cover
     no-repeat;
 }
 .pjBox.space-quiz-project .img {
-  background: url(/src/assets/project/space-quiz-project.png) center / 102%
+  background: url(/src/assets/project/space-quiz-project.png) center / cover
     no-repeat;
 }
 .pjBox.greenCard .img {
@@ -70,7 +71,7 @@
     no-repeat;
 }
 .pjTextWrap {
-  width: 52%;
+  width: 34.5rem;
   padding: 1rem;
   box-shadow: 4px 4px 5px #5b4b3033;
   background-color: var(--white_3);
@@ -129,10 +130,10 @@
 }
 /* subProject----------------------------------- */
 .subProjectWrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  width: 100%;
 }
 .subPjBox .projectTitle {
   margin: 5px 0 15px 0;
@@ -144,25 +145,24 @@
   align-items: center;
   flex-direction: column;
   position: relative;
-  width: fit-content;
-  padding: 1rem;
   color: var(--brown_2);
   background: var(--white_1);
   padding: 0.7rem;
+  box-sizing: border-box;
 }
 
 .subPjBox .subPjImg {
   position: relative;
-  width: 22.5rem;
+  width: 100%;
   height: 11rem;
   background-position: center;
-  background-size: 105%;
+  background-size: 85%;
   background-repeat: no-repeat;
   background-color: #fff;
   transition: 0.3s;
 }
 .subPjBox .subPjImg:hover {
-  background-size: 120%;
+  background-size: 100%;
 }
 
 .subPjBox .subPjImg:hover .imgCover {
@@ -171,6 +171,7 @@
 
 .subPjBox.subPjBox_portfolio2024 .subPjImg {
   background-image: url(/src/assets/project/portfolio2024.png);
+  background-color: #000;
 }
 
 .subPjBox.subPjBox_greenCardSupport .subPjImg {
@@ -180,34 +181,21 @@
 
 .subPjBox.subPjBox_listUI .subPjImg {
   background-image: url(/src/assets/project/listUI.png?t=1771910651327);
-  background-size: 62%;
 }
 .subPjBox.subPjBox_listUI .subPjImg:hover {
-  background-size: 70%;
 }
 
 .subPjBox.subPjBox_clipPath .subPjImg {
   background-image: url(/src/assets/project/clipPath.png);
-  background-size: 83%;
-}
-.subPjBox.subPjBox_clipPath .subPjImg:hover {
-  background-size: 93%;
 }
 
 .subPjBox.subPjBox_luckyWheel .subPjImg {
   background-image: url(/src/assets/project/luckyWheel.png);
-  background-size: 63%;
-}
-.subPjBox.subPjBox_luckyWheel .subPjImg:hover {
-  background-size: 80%;
 }
 
 .subPjBox.subPjBox_findTheNumber .subPjImg {
   background-image: url(/src/assets/project/findTheNumber.png);
-  background-size: 157%;
-}
-.subPjBox.subPjBox_findTheNumber .subPjImg:hover {
-  background-size: 180%;
+  background-color: #f1eff8;
 }
 
 .imgCover {
@@ -242,20 +230,4 @@
   font-size: 1.7rem;
   cursor: pointer;
   border-radius: 4px;
-}
-
-/* 1240px 이하 */
-@media (max-width: 1240px) {
-  .subPjBox .subPjImg {
-    position: relative;
-    width: 18.5rem;
-    height: 9rem;
-  }
-}
-/* 1040px 이하 */
-@media (max-width: 1040px) {
-}
-
-/* 1024px 이하 */
-@media (max-width: 1024px) {
 }

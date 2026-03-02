@@ -3,6 +3,7 @@
 @import url(./project.css);
 @import url(./contect.css);
 @import url(./home.css);
+@import url(responsive.css);
 
 section {
   position: relative;
@@ -16,15 +17,4 @@ section > [class$="Wrap"] {
   margin: 0 auto;
   padding: 0 1.5rem;
   box-sizing: border-box;
-}
-
-/* 1240px 이하 */
-@media (max-width: 1040px) {
-}
-/* 1040px 이하 */
-@media (max-width: 1040px) {
-}
-
-/* 1024px 이하 */
-@media (max-width: 1024px) {
 }
