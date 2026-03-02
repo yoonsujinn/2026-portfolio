@@ -35,4 +35,59 @@
   .pjBox {
     flex-direction: column;
   }
+  .pjBox .img {
+    width: 48.3rem;
+    height: 26.9rem;
+  }
+  .pjTextWrap {
+    width: 49.5rem;
+  }
+  .subProjectWrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .subPjBox .subPjImg {
+    height: 15.6rem;
+  }
+}
+
+/* 885px 이하 */
+@media (max-width: 885px) {
+  .aboutBoxWrap > :nth-child(1) {
+    grid-column: span 7;
+    background-size: 100%;
+  }
+  .aboutBoxWrap > :nth-child(2) {
+    grid-column: span 7;
+  }
+  .aboutBoxWrap > :nth-child(3) {
+    grid-column: span 8;
+  }
+  .aboutBoxWrap > :nth-child(4) {
+    grid-column: span 15;
+  }
+
+  .aboutBoxWrap > :nth-child(5) {
+    grid-column: span 8;
+  }
+  .aboutBoxWrap > :nth-child(6) {
+    grid-column: span 15;
+  }
+  .pjBox .img {
+    width: 34.9rem;
+    height: 19.2rem;
+  }
+  .pjTextWrap {
+    width: 33rem;
+  }
+
+  .subProjectWrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .subPjBox .subPjImg {
+    height: 20rem;
+  }
+
+  .contactMainText p:first-child {
+    font-size: 2rem;
+  }
 }

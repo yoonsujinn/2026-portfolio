@@ -50,8 +50,8 @@ export const projectData = [
         git: "https://github.com/yoonsujinn/greenCard",
         view: "https://yoonsujinn.github.io/greenCard/greenCard.html",
         desc: [
-          "그린카드 홈페이지의 디자인과 기능을 클론 코딩하며 CSS 애니메이션과 javascript구현 실력을 높인 프로젝트입니다.",
-          "시맨틱 마크업을 적용해 웹 문서의 구조적 완성도를 높였으며, 웹 접근성을 고려한 키보드 네비게이션 기능을 추가했습니다.",
+          "그린카드 홈페이지의 디자인과 기능을 클론 코딩하며 CSS 애니메이션과\njavascript구현 실력을 높인 프로젝트입니다.",
+          "시맨틱 마크업을 적용해 웹 문서의 구조적 완성도를 높였으며,\n웹 접근성을 고려한 키보드 네비게이션 기능을 추가했습니다.",
         ],
       },
     ],
