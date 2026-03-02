@@ -183,8 +183,6 @@
 .subPjBox.subPjBox_listUI .subPjImg {
   background-image: url(/src/assets/project/listUI.png?t=1771910651327);
 }
-.subPjBox.subPjBox_listUI .subPjImg:hover {
-}
 
 .subPjBox.subPjBox_clipPath .subPjImg {
   background-image: url(/src/assets/project/clipPath.png);
