@@ -52,23 +52,30 @@
   position: relative;
   width: 33rem;
   height: 19rem;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .pjBox.ReactDiary .img {
-  background: url(../assets/project/react_diary.png) center 0px / cover
-    no-repeat;
+  background-image: url(../assets/project/react_diary.png);
+  background-position: center 0px;
+  background-color: #e9e9e9;
 }
 .pjBox.ReactTodo .img {
-  background: #fff url(/src/assets/project/react-todo.png) center 0px / cover
-    no-repeat;
+  background-color: #fff;
+  background-image: url(/src/assets/project/react-todo.png);
+  background-position: center 0px;
 }
 .pjBox.space-quiz-project .img {
-  background: url(/src/assets/project/space-quiz-project.png) center / cover
-    no-repeat;
+  background-image: url(/src/assets/project/space-quiz-project.png);
+  background-position: center;
+  background-color: #121943;
 }
 .pjBox.greenCard .img {
-  background: url(/src/assets/project/greenCard.png) top center / cover
-    no-repeat;
+  background-image: url(/src/assets/project/greenCard.png);
+  background-position: top center;
+  background-size: cover;
+  background-color: #25c18d;
 }
 .pjTextWrap {
   width: 34.5rem;
@@ -86,15 +93,20 @@
 }
 
 .projectTitle {
+  width: fit-content;
   font-size: 1.8rem;
   line-height: 1.8rem;
   font-family: "MonaSans_R", "NotoSans_R";
 }
 
 .pjTextWrap .stack {
+  height: fit-content;
   background: #f5efed;
   padding: 0 5px;
   font-size: 1rem;
+}
+.members {
+  width: max-content;
 }
 .descUl,
 .members {
@@ -128,6 +140,9 @@
   align-self: flex-start;
   font-size: 1.8rem;
   flex-shrink: 0;
+}
+.iconBox:after {
+  content: attr(aria-label);
 }
 /* subProject----------------------------------- */
 .subProjectWrap {

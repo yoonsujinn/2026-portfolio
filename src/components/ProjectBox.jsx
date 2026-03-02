@@ -30,18 +30,27 @@ const ProjectBox = ({data}) => {
                 <a
                   href={mItems.spec}
                   target="blank"
-                  className="iconBox specBox">
+                  className="iconBox specBox"
+                  aria-label={mItems.spec}>
                   <PiClipboardTextLight />
-                  {mItems.spec}
+                  {/* {mItems.spec} */}
                 </a>
               )}
-              <a href={mItems.git} target="blank" className="iconBox gitBox">
+              <a
+                href={mItems.git}
+                target="blank"
+                className="iconBox gitBox"
+                aria-label={mItems.git}>
                 <FaGithub />
-                {mItems.git}
+                {/* {mItems.git} */}
               </a>
-              <a href={mItems.view} target="_blank" className="iconBox viewBox">
+              <a
+                href={mItems.view}
+                target="_blank"
+                className="iconBox viewBox"
+                aria-label={mItems.view}>
                 <GoLinkExternal />
-                {mItems.view}
+                {/* {mItems.view} */}
               </a>
             </div>
           </div>

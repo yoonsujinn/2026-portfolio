@@ -30,26 +30,46 @@
     grid-column: span 11;
     order: 5;
   }
+  .mainProjectWrap {
+    padding: 1.3rem;
+  }
 
   .pjBox {
     flex-direction: column;
   }
   .pjBox .img {
-    width: 48.3rem;
-    height: 26.9rem;
+    width: 100%;
+    height: 29rem;
+  }
+  .pjBox.ReactDiary .img {
+    background-size: 53rem;
+  }
+  .pjBox.ReactTodo .img {
+    background-size: 54rem;
+  }
+  .pjBox.space-quiz-project .img {
+    background-size: 52.1rem;
+  }
+  .pjBox.greenCard .img {
+    background-size: 55.1rem;
   }
   .pjTextWrap {
-    width: 49.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 1rem;
+    width: 100%;
+    box-sizing: border-box;
   }
-  .subProjectWrap {
-    grid-template-columns: repeat(2, 1fr);
+  .pjTextWrap > .iconBox {
+    width: 100%;
   }
   .subPjBox .subPjImg {
     height: 15.6rem;
   }
 }
-
 /* 885px 이하 */
+
 @media (max-width: 885px) {
   .aboutBoxWrap > :nth-child(1) {
     grid-column: span 7;
@@ -72,18 +92,44 @@
     grid-column: span 15;
   }
   .pjBox .img {
-    width: 34.9rem;
-    height: 19.2rem;
+    height: 11rem;
   }
-  .pjTextWrap {
-    width: 33rem;
+  .pjBox.ReactDiary .img {
+    background-size: 34.5rem;
+  }
+  .pjBox.ReactTodo .img {
+    background-size: 27rem;
+  }
+  .pjBox.space-quiz-project .img {
+    background-size: 21.1rem;
+  }
+  .pjBox.greenCard .img {
+    background-size: 21.1rem;
   }
 
   .subProjectWrap {
     grid-template-columns: repeat(1, 1fr);
   }
   .subPjBox .subPjImg {
-    height: 20rem;
+    height: 12rem;
+  }
+  .subPjBox.subPjBox_portfolio2024 .subPjImg {
+    background-size: 23rem;
+  }
+  .subPjBox.subPjBox_greenCardSupport .subPjImg {
+    background-size: 21.5rem;
+  }
+  .subPjBox.subPjBox_listUI .subPjImg {
+    background-size: 22rem;
+  }
+  .subPjBox.subPjBox_clipPath .subPjImg {
+    background-size: 23rem;
+  }
+  .subPjBox.subPjBox_luckyWheel .subPjImg {
+    background-size: 24rem;
+  }
+  .subPjBox.subPjBox_findTheNumber .subPjImg {
+    background-size: 24rem;
   }
 
   .contactMainText p:first-child {
@@ -139,5 +185,18 @@
   .aboutButtonWrap {
     gap: 5px;
     margin: 20px 4px;
+  }
+  .projectWrap h1 {
+    justify-content: center;
+  }
+  .projectWrap h1::after {
+    content: none;
+  }
+  .pjTextWrap > .iconBox {
+    width: fit-content;
+    margin: 0;
+  }
+  .iconBox:after {
+    content: none;
   }
 }
