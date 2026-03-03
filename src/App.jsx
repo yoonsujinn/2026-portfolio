@@ -1,5 +1,4 @@
 import "./App.css";
-import "./style/responsive.css";
 
 // 컴포넌트 ---------------------
 import Header from "./components/Header";

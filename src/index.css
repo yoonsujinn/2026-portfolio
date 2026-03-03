@@ -45,19 +45,28 @@ h6 {
 }
 
 /* 스크롤바 전체 */
-body::-webkit-scrollbar {
-  width: 6px; /* 얇게 */
+
+html,
+body {
+  scrollbar-color: rgb(93, 67, 54) #5d4336;
 }
 
-/* 트랙을 완전히 투명 처리 */
-*::-webkit-scrollbar-track,
-html::-webkit-scrollbar-track,
-body::-webkit-scrollbar-track {
-  background: #ffffff00;
-}
-
-/* thumb만 색상 지정 */
+html::-webkit-scrollbar-thumb,
 body::-webkit-scrollbar-thumb {
-  background-color: var(--brown_2);
-  border-radius: 10px;
+  background: rgba(93, 67, 54, 1);
+}
+
+/* Chrome */
+html .scrollBox::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox */
+html .scrollBox {
+  scrollbar-width: none;
+}
+
+/* IE */
+.scrollBox {
+  -ms-overflow-style: none;
 }

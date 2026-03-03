@@ -1,13 +1,20 @@
 /* 1240px 이하 */
 @media (max-width: 1240px) {
+  .headerWrap {
+    font-size: 1.3rem;
+  }
   .aboutBoxWrap {
     width: 100%;
     grid-template-columns: repeat(15, 1fr);
     grid-template-rows: auto auto auto;
   }
+  .aboutBoxWrap > :not(:nth-child(4)) {
+    height: 10.2rem;
+  }
   .aboutBoxWrap > :nth-child(1) {
     grid-column: span 4;
     order: 1;
+    background-size: 13.2rem;
   }
   .aboutBoxWrap > :nth-child(2) {
     grid-column: span 5;
@@ -30,8 +37,19 @@
     grid-column: span 11;
     order: 5;
   }
-  .mainProjectWrap {
-    padding: 1.3rem;
+
+  .aboutUl li > p {
+    font-size: 1rem;
+  }
+  .aboutUl li > span {
+    font-size: 1.1rem;
+  }
+  .projectWrap h1 {
+    margin: 0;
+  }
+
+  .descUl {
+    width: 100%;
   }
 
   .pjBox {
@@ -42,16 +60,16 @@
     height: 29rem;
   }
   .pjBox.ReactDiary .img {
-    background-size: 53rem;
+    background-size: 55rem;
   }
   .pjBox.ReactTodo .img {
-    background-size: 54rem;
+    background-size: 52rem;
   }
   .pjBox.space-quiz-project .img {
-    background-size: 52.1rem;
+    background-size: 53.8rem;
   }
   .pjBox.greenCard .img {
-    background-size: 55.1rem;
+    background-size: 51.5rem;
   }
   .pjTextWrap {
     display: flex;
@@ -61,19 +79,70 @@
     width: 100%;
     box-sizing: border-box;
   }
+  .members {
+    margin: 0;
+    top: 0.05rem;
+  }
   .pjTextWrap > .iconBox {
     width: 100%;
+  }
+
+  .subProjectWrap {
+    grid-template-columns: repeat(2, 1fr);
   }
   .subPjBox .subPjImg {
     height: 15.6rem;
   }
+  .subPjBox.subPjBox_portfolio2024 .subPjImg {
+    background-size: 25rem;
+  }
+  .subPjBox.subPjBox_greenCardSupport .subPjImg {
+    background-size: 23.5rem;
+  }
+  .subPjBox.subPjBox_listUI .subPjImg {
+    background-size: 24.7rem;
+  }
+  .subPjBox.subPjBox_clipPath .subPjImg {
+    background-size: 29rem;
+  }
+  .subPjBox.subPjBox_luckyWheel .subPjImg {
+    background-size: 28rem;
+  }
+  .subPjBox.subPjBox_findTheNumber .subPjImg {
+    background-size: 31rem;
+  }
 }
-/* 885px 이하 */
 
+/* 885px 이하 */
 @media (max-width: 885px) {
+  .header {
+    padding: 0 1rem;
+  }
+  .headerWrap {
+    font-size: 1rem;
+  }
+  .homeWrap h1 {
+    font-size: 2.3rem;
+  }
+  .homeWrap h2,
+  .homeWrap > p {
+    font-size: 1rem;
+  }
+
+  .aboutWrap > h1 {
+    height: 6.5rem;
+    font-size: 2.3rem;
+  }
+  .aboutButtonWrap button > .comm .projectWrap h1 {
+    font-size: 2.3rem;
+  }
+
+  .aboutBoxWrap > :not(:nth-child(4)) {
+    height: 8.1rem;
+  }
   .aboutBoxWrap > :nth-child(1) {
     grid-column: span 7;
-    background-size: 18rem;
+    background-size: 10.5rem;
   }
   .aboutBoxWrap > :nth-child(2) {
     grid-column: span 7;
@@ -91,73 +160,94 @@
   .aboutBoxWrap > :nth-child(6) {
     grid-column: span 15;
   }
+
+  .aboutBox .aboxBoxTitle {
+    font-size: 1.2rem;
+    padding: 0.2rem;
+  }
+
+  .aboutBox .aboxBoxTitle .logo {
+    font-size: 1.6rem;
+  }
+  .aboutButtonWrap button,
+  .aboutUl li > span,
+  .aboutUl li > p {
+    font-size: 0.8rem;
+  }
+  .aboutButtonWrap button .comm {
+    font-size: 0.8rem;
+  }
+
+  .projectWrap h1 {
+    font-size: 2.5rem;
+  }
+
+  .projectTitle {
+    font-size: 1.2rem;
+  }
+  .pjTextWrap {
+    column-gap: 0.4rem;
+  }
+  .pjTextWrap .stack {
+    font-size: 0.7rem;
+  }
+  .descUl,
+  .members {
+    font-size: 0.8rem;
+  }
   .pjBox .img {
-    height: 11rem;
+    height: 21.4rem;
   }
   .pjBox.ReactDiary .img {
-    background-size: 34.5rem;
+    background-size: 55rem;
   }
   .pjBox.ReactTodo .img {
-    background-size: 27rem;
+    background-size: 37.7rem;
   }
   .pjBox.space-quiz-project .img {
-    background-size: 21.1rem;
+    background-size: 38.2rem;
   }
   .pjBox.greenCard .img {
-    background-size: 21.1rem;
+    background-size: 36.8rem;
+  }
+  .iconBox svg {
+    font-size: 1.4rem;
   }
 
   .subProjectWrap {
     grid-template-columns: repeat(1, 1fr);
   }
   .subPjBox .subPjImg {
-    height: 12rem;
-  }
-  .subPjBox.subPjBox_portfolio2024 .subPjImg {
-    background-size: 23rem;
-  }
-  .subPjBox.subPjBox_greenCardSupport .subPjImg {
-    background-size: 21.5rem;
-  }
-  .subPjBox.subPjBox_listUI .subPjImg {
-    background-size: 22rem;
-  }
-  .subPjBox.subPjBox_clipPath .subPjImg {
-    background-size: 23rem;
-  }
-  .subPjBox.subPjBox_luckyWheel .subPjImg {
-    background-size: 24rem;
-  }
-  .subPjBox.subPjBox_findTheNumber .subPjImg {
-    background-size: 24rem;
+    height: 16rem;
   }
 
   .contactMainText p:first-child {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+  .contactMainText p:nth-child(2) {
+    font-size: 1rem;
+  }
+  .contactWrap a {
+    font-size: 1.4rem;
+  }
+  .contectBottom svg {
+    padding: 0.5rem;
   }
 }
 
 @media (max-width: 680px) {
-  .header {
+  .headerWrap {
+    justify-content: center;
+  }
+  .headerRight {
     display: none;
   }
   .aboutBoxWrap {
-    margin: 0rem 0;
-  }
-  .homeWrap h1 {
-    font-size: 2.2rem;
-  }
-  .homeWrap h2 {
-    font-size: 1rem;
-  }
-  .aboutWrap > h1 {
-    height: 6.5rem;
-    font-size: 2.2rem;
+    margin: 0.4rem 0;
   }
 
   .aboutBoxWrap > :nth-child(1) {
     grid-column: span 15;
-    background-size: 18rem;
   }
   .aboutBoxWrap > :nth-child(5),
   .aboutBoxWrap > :nth-child(3),
@@ -184,8 +274,38 @@
   }
   .aboutButtonWrap {
     gap: 5px;
-    margin: 20px 4px;
+    margin: 1rem 2rem;
   }
+  .mainProjectWrap {
+    padding: 0.5rem;
+  }
+
+  .pjBox .img {
+    height: 11.5rem;
+  }
+  .pjBox.ReactDiary .img {
+    background-size: 22.6rem;
+  }
+  .pjBox.ReactTodo .img {
+    background-size: 23.6rem;
+  }
+  .pjBox.space-quiz-project .img {
+    background-size: 20.5rem;
+  }
+  .pjBox.greenCard .img {
+    background-size: 20.1rem;
+  }
+  .projectTitle {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .pjTextWrap {
+    padding: 0.5rem;
+  }
+  .members {
+    top: -0.05rem;
+  }
+
   .projectWrap h1 {
     justify-content: center;
   }
@@ -196,7 +316,42 @@
     width: fit-content;
     margin: 0;
   }
+  .subPjBox .projectTitle {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .comm {
+    font-size: 0.8rem;
+  }
+  .subPjBox .subPjImg {
+    height: 9.3rem;
+  }
+  .subPjBox.subPjBox_portfolio2024 .subPjImg {
+    background-size: 18rem;
+  }
+  .subPjBox.subPjBox_greenCardSupport .subPjImg {
+    background-size: 18.5rem;
+  }
+  .subPjBox.subPjBox_listUI .subPjImg {
+    background-size: 17rem;
+  }
+  .subPjBox.subPjBox_clipPath .subPjImg {
+    background-size: 18rem;
+  }
+  .subPjBox.subPjBox_luckyWheel .subPjImg {
+    background-size: 17.5rem;
+  }
+  .subPjBox.subPjBox_findTheNumber .subPjImg {
+    background-size: 17.5rem;
+  }
   .iconBox:after {
     content: none;
+  }
+  .contactMainText p:first-child {
+    font-size: 1.1rem;
+  }
+  .contactMainText p:nth-child(2) {
+    font-size: 0.7rem;
   }
 }

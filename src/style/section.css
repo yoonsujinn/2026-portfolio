@@ -3,11 +3,12 @@
 @import url(./project.css);
 @import url(./contect.css);
 @import url(./home.css);
-@import url(responsive.css);
+@import url(./responsive.css);
 
 section {
   position: relative;
   width: 100%;
+  box-sizing: border-box;
 }
 
 section > [class$="Wrap"] {

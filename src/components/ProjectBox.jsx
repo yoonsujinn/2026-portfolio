@@ -6,9 +6,14 @@ const ProjectBox = ({data}) => {
       {data.type === "MainProject" &&
         data.items.map((mItems, idx) => (
           <div className={`pjBox ${mItems.projectName}`} key={idx}>
-            <div className={`img ${data.projectName}Img`}></div>
+            <div className={`img ${mItems.projectName}Img`}></div>
             <div className="pjTextWrap">
               <div className="projectTitle">{mItems.name}</div>
+              <div className="members">
+                {mItems.members === 1
+                  ? "개인 프로젝트"
+                  : `프로젝트 인원 : ${mItems.members} 명`}
+              </div>
               <div className="stackListWrap">
                 {mItems.techStack.map((t, tIdx) => (
                   <div className="stack" key={tIdx}>
@@ -16,11 +21,7 @@ const ProjectBox = ({data}) => {
                   </div>
                 ))}
               </div>
-              <div className="members">
-                {mItems.members === 1
-                  ? "개인 프로젝트"
-                  : `프로젝트 인원 : ${mItems.members} 명`}
-              </div>
+
               <ul className="descUl">
                 {mItems.desc.map((d, liIdx) => (
                   <li key={liIdx}>{d}</li>
