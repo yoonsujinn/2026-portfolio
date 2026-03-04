@@ -122,9 +122,14 @@
 }
 .pjTextWrap > .iconBox {
   margin: 0 0 10px;
+  transition: 0.3s;
 }
 .pjTextWrap > .iconBox:last-child {
   margin: 0;
+}
+.pjTextWrap > .iconBox:hover {
+  background: var(--brown_2);
+  color: var(--white_1);
 }
 
 .iconBox {
@@ -224,7 +229,7 @@
   padding: 10px;
   transition: 0.5s;
   color: #fff;
-  background: #362c14eb;
+  background: var(--brown_2);
   font-family: "MonaSans_R", "NotoSans_R";
 }
 .comm {
@@ -238,16 +243,7 @@
   margin: 10px 0 0 0;
 }
 .subPjBox .subPjImg:hover .imgCover {
-  opacity: 1;
-}
-
-.buttonWrap a {
-  pointer-events: none;
-  cursor: default;
-}
-.subPjBox .subPjImg:hover .buttonWrap a {
-  pointer-events: auto;
-  cursor: pointer;
+  opacity: 0.9;
 }
 
 .buttonWrap a svg {
@@ -256,4 +252,9 @@
   padding: 5px;
   font-size: 1.7rem;
   border-radius: 4px;
+}
+
+.buttonWrap a:hover svg {
+  background: var(--brown_1);
+  color: var(--white_1);
 }

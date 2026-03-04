@@ -38,6 +38,11 @@ section.contact {
   color: var(--brown_1);
 }
 
+.contactWrap a:hover {
+  background: var(--brown_1);
+  color: var(--white_1);
+}
+
 .contectBottom {
   display: flex;
   justify-content: space-between;
@@ -57,7 +62,6 @@ section.contact {
   bottom: 0;
   border-radius: 50%;
   padding: 1rem;
-  cursor: pointer;
   font-size: 2rem;
   background: radial-gradient(circle, #ecdecc 30%, #f5f1ec 80%);
 }
