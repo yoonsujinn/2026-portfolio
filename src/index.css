@@ -53,7 +53,7 @@ body {
 
 html::-webkit-scrollbar-thumb,
 body::-webkit-scrollbar-thumb {
-  background: rgba(93, 67, 54, 1);
+  background: rgba(255, 255, 255, 0);
 }
 
 /* Chrome */
