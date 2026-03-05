@@ -1,8 +1,5 @@
 /* 1240px 이하 */
 @media (max-width: 1240px) {
-  .headerWrap {
-    font-size: 1.3rem;
-  }
   .aboutBoxWrap {
     width: 100%;
     grid-template-columns: repeat(15, 1fr);

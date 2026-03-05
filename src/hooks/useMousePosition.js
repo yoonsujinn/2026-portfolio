@@ -1,19 +1,17 @@
-import {useEffect, useState, useRef} from "react";
+import {useEffect, useRef} from "react";
 
 export function useMousePosition() {
-  const target = useRef({x: 0, y: 0}); // 실제 마우스 위치
-  const [pos, setPos] = useState({x: 0, y: 0});
-
+  const posRef = useRef({x: 0, y: 0});
   useEffect(() => {
     const mouseHandler = (e) => {
-      setPos({x: e.clientX, y: e.clientY});
+      posRef.current = {x: e.clientX, y: e.clientY};
     };
-
     window.addEventListener("mousemove", mouseHandler);
+    console.log("리렌더링!!");
+
     return () => {
-      window.removeEventListener("mousemove", mouseHandler);
+      window.addEventListener("mousemove", mouseHandler);
     };
   }, []);
-
-  return pos;
+  return posRef;
 }

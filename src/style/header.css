@@ -4,9 +4,10 @@
   position: fixed;
   top: 0px;
   width: 100%;
+  min-width: 380px;
   height: 60px;
   color: #a77b73;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
   box-sizing: border-box;
   z-index: 6;
   font-family: "MonaSans_L";
@@ -22,7 +23,7 @@
   max-width: 1240px;
   height: 100%;
   margin: 0 auto;
-  font-size: 1.6rem;
+  font-size: 1rem;
 }
 
 .headerLeft > p {
@@ -36,6 +37,21 @@
 }
 
 .headerRight li {
+  position: relative;
   height: 100%;
   text-align: center;
+}
+
+.headerRight li.active {
+  font-family: "MonaSans_B";
+}
+.headerRight li.active:after {
+  content: "";
+  position: absolute;
+  top: -24.3%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 0.3rem;
+  aspect-ratio: 1 / 1;
+  background: var(--brown_1);
 }

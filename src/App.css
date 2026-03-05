@@ -18,7 +18,7 @@
   z-index: 10;
   background: radial-gradient(
     circle,
-    rgba(124, 51, 21, 0.9) 0%,
+    rgba(124, 51, 21, 0.8) 0%,
     rgba(124, 51, 21, 0.2) 60%,
     rgba(124, 51, 21, 0) 100%
   );
@@ -34,12 +34,13 @@
   width: 10rem;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
-  background: radial-gradient(
+  border: 1px solid var(--brown_1);
+  /* background: radial-gradient(
     circle,
     rgba(206, 161, 141, 0.8) 0%,
     rgba(206, 161, 141, 0.2) 60%,
     rgba(206, 161, 141, 0) 100%
-  );
+  ); */
   animation: mouseEleAni 0.5s 0.1s 1 forwards;
 }
 @keyframes mouseEleAni {

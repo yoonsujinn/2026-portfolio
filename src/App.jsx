@@ -1,4 +1,9 @@
 import "./App.css";
+import {useEffect} from "react";
+// 커스텀 훅
+import {useMousePosition} from "./hooks/useMousePosition";
+// import {useCursorEffect} from "./hooks/useCursorEffect";
+// import {useMouseScroll} from "./hooks/usemouseScroll";
 
 // 컴포넌트 ---------------------
 import Header from "./components/Header";
@@ -7,14 +12,13 @@ import About from "./components/About";
 import Project from "./components/Project";
 import Contact from "./components/Contact";
 
-// 커스텀 훅
-import {useMousePosition} from "./hooks/useMousePosition";
-import {useCursorEffect} from "./hooks/mouseEvent";
-
 function App() {
-  useCursorEffect();
+  const posRef = useMousePosition();
+  useEffect(() => {
+    console.log("리렌더링!!");
+    const mouseEle = document.querySelector(".mouseEle");
+  }, [posRef]);
 
-  const {x, y} = useMousePosition();
   const sections = [
     {clsName: "home"},
     {clsName: "about"},
@@ -35,10 +39,12 @@ function App() {
       ))}
       <div
         className="mouseEle"
-        style={{
-          left: `${x - 15}px`,
-          top: `${y - 15}px`,
-        }}></div>
+        style={
+          {
+            // left: `${x - 15}px`,
+            // top: `${y - 15}px`,
+          }
+        }></div>
     </div>
   );
 }
