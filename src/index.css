@@ -1,10 +1,12 @@
 :root {
   --brown_1: #a77b73;
   --brown_2: #5d4336;
+  --brown_3: #3b2a22;
   --white_1: #f8f3f3;
   --white_2: #e6e3e1;
   --white_3: #fefaf9;
   --white_4: #f5f1ec;
+  --pink_1: #e89485;
 }
 
 #root,
@@ -22,7 +24,7 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
-  /* cursor: none; */
+  cursor: none;
 }
 
 a {

@@ -38,11 +38,11 @@ const Contact = ({clsName}) => {
           </a>
         </div>
       </div>
-      <div className="contectBottom">
+      <div className="contactBottom">
         <div className="bottomLeft">2026 yoonsujinn.github.io </div>
-        <div className="bottomRight" onClick={clickTop}>
+        <button className="bottomRight" onClick={clickTop}>
           <TbArrowBigUpLine />
-        </div>
+        </button>
       </div>
     </div>
   );

@@ -38,12 +38,12 @@ section.contact {
   color: var(--brown_1);
 }
 
-.contactWrap a:hover {
+.contactWrap .iconWrap a:hover {
   background: var(--brown_1);
   color: var(--white_1);
 }
 
-.contectBottom {
+.contactBottom {
   display: flex;
   justify-content: space-between;
   position: absolute;
@@ -51,12 +51,12 @@ section.contact {
   width: 95vw;
 }
 
-.contectBottom .bottomLeft {
+.contactBottom .bottomLeft {
   height: fit-content;
   align-items: end;
 }
 
-.contectBottom svg {
+.contactBottom svg {
   position: absolute;
   right: 0;
   bottom: 0;

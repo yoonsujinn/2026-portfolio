@@ -1,0 +1,36 @@
+.mouseEle {
+  position: fixed;
+  top: 1px;
+  left: 1px;
+  width: 3rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  pointer-events: none;
+  background: var(--pink_1);
+  mix-blend-mode: multiply;
+  z-index: 20;
+}
+
+.mouseEle.active {
+  width: 0rem;
+}
+
+.mouseEle.active:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  border: 2px solid var(--pink_1);
+  animation: mouseEleAni 1.5s infinite;
+}
+@keyframes mouseEleAni {
+  0% {
+    width: 0.5rem;
+  }
+  100% {
+    width: 5rem;
+  }
+}
