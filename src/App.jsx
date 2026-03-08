@@ -1,6 +1,6 @@
 import "./App.css";
 
-import {useRef} from "react";
+import {useRef, useEffect} from "react";
 import {useMouseScroll} from "./hooks/useMouseScroll";
 
 // 컴포넌트 ---------------------
@@ -16,10 +16,11 @@ const sections = [
   {clsName: "project"},
   {clsName: "contact"},
 ];
-const scrollEventClassName = ["home", "about", "project", "contact"];
+const scrEventClassName = ["home", "about", "project", "contact"];
 
 function App() {
-  const refs = useRef([]);
+  const scrEventRefs = useRef([]);
+
   return (
     <div className="app_wrap">
       <Header />
