@@ -1,7 +1,7 @@
 import "./App.css";
 
 import {useRef, useEffect} from "react";
-import {useMouseScroll} from "./hooks/useMouseScroll";
+// import {useMouseScroll} from "./hooks/useMouseScroll";
 
 // 컴포넌트 ---------------------
 import Header from "./components/Header";
@@ -21,15 +21,29 @@ const scrEventClassName = ["home", "about", "project", "contact"];
 function App() {
   const scrEventRefs = useRef([]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      scrEventRefs.current.forEach((el, i) => {
+        console.log(el, "3333333333333");
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="app_wrap">
       <Header />
-      {sections.map(({clsName}) => (
-        <section key={clsName} className={clsName}>
-          {clsName === "home" && <Home />}
-          {clsName === "about" && <About />}
-          {clsName === "project" && <Project />}
-          {clsName === "contact" && <Contact />}
+      {sections.map(({clsName}, i) => (
+        <section
+          key={clsName}
+          className={clsName}
+          ref={(el) => (scrEventRefs.current[i] = el)}>
+          {clsName === "home" && <Home ref={scrEventClassName} />}
+          {clsName === "about" && <About ref={scrEventClassName} />}
+          {clsName === "project" && <Project ref={scrEventClassName} />}
+          {clsName === "contact" && <Contact ref={scrEventClassName} />}
         </section>
       ))}
       <Cursor />

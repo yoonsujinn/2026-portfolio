@@ -1,8 +1,8 @@
 import "../style/section.css";
-
-const Home = ({clsName}) => {
+import {forwardRef} from "react";
+const Home = ({clsName}, ref) => {
   return (
-    <div className="homeWrap">
+    <div className="homeWrap" ref={ref}>
       <p>WELCOME TO MY PORTFOLIO</p>
       <h1>
         안녕하세요.

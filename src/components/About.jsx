@@ -1,6 +1,7 @@
 import "../style/section.css";
 import AboutBox from "./AboutBox";
 import {aboutData} from "../data/aboutData.js";
+import {forwardRef} from "react";
 
 const About = () => {
   return (
