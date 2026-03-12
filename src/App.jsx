@@ -1,7 +1,6 @@
 import "./App.css";
 
 import {useRef, useEffect} from "react";
-// import {useMouseScroll} from "./hooks/useMouseScroll";
 
 // 컴포넌트 ---------------------
 import Header from "./components/Header";
@@ -23,9 +22,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      scrEventRefs.current.forEach((el, i) => {
-        console.log(el, "3333333333333");
-      });
+      scrEventRefs.current.forEach((el, i) => {});
     };
 
     window.addEventListener("scroll", handleScroll);
