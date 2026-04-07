@@ -8,7 +8,7 @@ const Cursor = () => {
   return (
     <>
       <div
-        className="mouseEle"
+        className="mouseEle remove"
         style={{
           transform: `translate3d(${pos.x}px, ${pos.y}px, 0) 
           translate(-50%, -50%)`,
