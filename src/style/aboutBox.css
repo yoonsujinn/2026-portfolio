@@ -20,8 +20,7 @@
   font-family: "MonaSans_SB";
   font-size: 3.5rem;
   color: var(--brown_1);
-  background: url(/2026-portfolio/src/assets/about/aboutBg2.png) center / cover
-    no-repeat;
+  background: url(../assets/about/aboutBg2.png) center / cover no-repeat;
   background-attachment: fixed;
 }
 
