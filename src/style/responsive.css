@@ -112,6 +112,12 @@
 
 /* 885px 이하 */
 @media (max-width: 885px) {
+  * {
+    cursor: default !important;
+  }
+  .mouseEle {
+    display: none !important;
+  }
   .header {
     padding: 0 1rem;
   }
