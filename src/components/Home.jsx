@@ -3,7 +3,12 @@ import {forwardRef} from "react";
 const Home = ({clsName}, ref) => {
   return (
     <div className="homeWrap" ref={ref}>
-      <p>WELCOME TO MY PORTFOLIO</p>
+      <p>
+        <span>WELCOME</span>
+        <span>TO</span>
+        <span>MY</span>
+        <span>PORTFOLIO</span>
+      </p>
       <h1>
         안녕하세요.
         <br />

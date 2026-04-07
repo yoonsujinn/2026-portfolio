@@ -12,21 +12,58 @@ section.home {
   justify-content: center;
   gap: 1rem;
   margin: 90px 0 0 0;
-  color: #fff;
+  color: var(--brown_1);
 }
 .homeWrap > p {
-  font-size: 1.2rem;
+  display: flex;
+  gap: 8px;
+  font-size: 1.5rem;
   font-family: "NotoSans_L";
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  flex-wrap: wrap;
+  justify-content: center;
 }
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+.homeWrap > p span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+.homeWrap > p span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.homeWrap > p span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.homeWrap > p span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.homeWrap > p span:nth-child(4) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
 .homeWrap h1 {
-  color: var(--brown_1);
   font-size: 3.5rem;
   text-align: center;
   font-family: "NotoSans_R";
   line-height: 1.1;
 }
 .homeWrap h2 {
-  color: var(--brown_1);
   font-size: 1.3rem;
   text-align: center;
   font-family: "NotoSans_L";
